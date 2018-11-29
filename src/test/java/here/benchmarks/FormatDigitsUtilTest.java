@@ -1,0 +1,52 @@
+package here.benchmarks;
+
+import org.junit.jupiter.api.*;
+
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.DoubleStream;
+import java.util.stream.IntStream;
+
+import static here.benchmarks.FormatDigitsUtil.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+/**
+ * Test for {@link FormatDigitsUtil};
+ *
+ * @author Horkhover Dmytro
+ * @since 2018-11-29
+ */
+class FormatDigitsUtilTest {
+
+    private static String format(int v) {
+        char[] chars = new char[v += 2];
+        chars[0] = '#';
+        chars[1] = '.';
+        for (int i = 2; i < v; i++) {
+            chars[i] = '#';
+        }
+        return new String(chars);
+    }
+
+    @Test
+    @DisplayName("FormatDouble")
+    void test_FormatDouble() {
+
+        IntStream.of(0, 1, 2, 4, 8).forEach(afterF -> {
+
+            DoubleStream.concat(
+                    DoubleStream.of(0.574734),
+                    ThreadLocalRandom.current().doubles(1 << 10)
+            ).forEach(source -> {
+
+                double expected = formatDouble(source, format(afterF));
+
+                assertAll(
+                        () -> assertEquals(expected, formatDouble_math(source, afterF)),
+                        () -> assertEquals(expected, formatDouble_math_cached(source, afterF)),
+                        () -> assertEquals(expected, formatDouble_BigDecimal(source, afterF))
+                );
+            });
+
+        });
+    }
+}

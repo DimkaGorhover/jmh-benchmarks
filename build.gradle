@@ -1,0 +1,88 @@
+import static org.gradle.api.tasks.testing.TestResult.ResultType.FAILURE
+
+plugins {
+    id "java"
+    id "com.github.johnrengelman.shadow" version "4.0.3"
+}
+
+ext {
+    junitPlatformVersion = "5.3.1"
+    jmhVersion = "1.21"
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+
+    compile("org.openjdk.jmh:jmh-core:$jmhVersion")
+    compile("org.openjdk.jmh:jmh-generator-bytecode:$jmhVersion")
+    annotationProcessor("org.openjdk.jmh:jmh-generator-annprocess:$jmhVersion")
+
+    annotationProcessor("org.projectlombok:lombok:1.18.2")
+    compileOnly("org.projectlombok:lombok:1.18.2")
+    testCompile("org.projectlombok:lombok:1.18.2")
+
+    testCompile("org.openjdk.jmh:jmh-samples:$jmhVersion")
+    testCompile("org.junit.jupiter:junit-jupiter-api:$junitPlatformVersion")
+    testCompile("org.junit.jupiter:junit-jupiter-engine:$junitPlatformVersion")
+    testCompile("org.junit.jupiter:junit-jupiter-params:$junitPlatformVersion")
+    testCompile("org.junit.vintage:junit-vintage-engine:$junitPlatformVersion")
+}
+test {
+
+    useJUnitPlatform {
+
+        excludeTags("integration")
+
+        includeEngines("junit-jupiter", "junit-vintage")
+    }
+
+    include("**/*Test.class")
+    exclude("**/*IntegrationTest.class")
+
+    afterTest { desc, result ->
+        //org.gradle.api.internal.tasks.testing.results.DefaultTestResult
+        if (result.resultType == FAILURE) {
+            result.failures.each { failure ->
+                def sep = ('=' * 80)
+                if (failure instanceof Throwable) {
+                    StringWriter writer = new StringWriter()
+                    failure.printStackTrace(new PrintWriter(writer))
+                    failure = writer.toString()
+                    writer.close()
+                }
+                System.err.printf("%n${sep}%n${failure}%n${sep}%n%n")
+            }
+        }
+    }
+
+    afterSuite { desc, result ->
+        if (!desc.parent && result.testCount > 0) { // will match the outermost suite
+
+            def output = "${project.name}: ${result.resultType} (${result.testCount} tests"
+            if (result.successfulTestCount > 0 && result.testCount != result.successfulTestCount)
+                output += ", ${result.successfulTestCount} successes"
+            if (result.failedTestCount > 0)
+                output += ", ${result.failedTestCount} failures"
+            if (result.skippedTestCount > 0)
+                output += ", ${result.skippedTestCount} skipped"
+            output += ")"
+
+            def startItem = '| '
+            def endItem = ' |'
+            def sep = ('-' * (startItem.length() + output.length() + endItem.length()))
+
+            (result.failedTestCount > 0 ? System.err : System.out).printf("%n${sep}%n${startItem}${output}${endItem}%n${sep}%n%n")
+        }
+    }
+}
+
+shadowJar {
+    archiveName = "benchmarks.jar"
+    manifest {
+        attributes "Main-Class": "here.benchmarks.App"
+    }
+    configurations = [project.configurations.compile]
+}
