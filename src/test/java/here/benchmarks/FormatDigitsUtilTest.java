@@ -31,7 +31,7 @@ class FormatDigitsUtilTest {
     @DisplayName("FormatDouble")
     void test_FormatDouble() {
 
-        IntStream.of(0, 1, 2, 4, 8).forEach(afterF -> {
+        IntStream.range(0, 12).forEach(afterF -> {
 
             DoubleStream.concat(
                     DoubleStream.of(0.574734),
@@ -41,9 +41,9 @@ class FormatDigitsUtilTest {
                 double expected = formatDouble(source, format(afterF));
 
                 assertAll(
-                        () -> assertEquals(expected, formatDouble_math(source, afterF)),
-                        () -> assertEquals(expected, formatDouble_math_cached(source, afterF)),
-                        () -> assertEquals(expected, formatDouble_BigDecimal(source, afterF))
+                        () -> assertEquals(expected, FormatDigitsUtil2.formatDouble_math(source, afterF)),
+                        () -> assertEquals(expected, FormatDigitsUtil2.formatDouble_math_cached(source, afterF)),
+                        () -> assertEquals(expected, FormatDigitsUtil2.formatDouble_BigDecimal(source, afterF))
                 );
             });
 

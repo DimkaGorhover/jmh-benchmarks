@@ -1,0 +1,1491 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 4 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: here.benchmarks.HashCodeJmhTest.test_ApacheCommons3
+
+# Run progress: 0.00% complete, ETA 00:05:20
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65334]
+# Fork: 1 of 4
+# Warmup Iteration   1: 59.290 ±(99.9%) 11.982 ns/op
+# Warmup Iteration   2: 64.273 ±(99.9%) 2.574 ns/op
+# Warmup Iteration   3: 58.804 ±(99.9%) 11.033 ns/op
+# Warmup Iteration   4: 58.322 ±(99.9%) 10.741 ns/op
+Iteration   1: 66.536 ±(99.9%) 21.513 ns/op
+                 ·gc.alloc.rate:      0.005 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    13.000 threads
+
+Iteration   2: 64.111 ±(99.9%) 16.031 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    14.000 threads
+
+Iteration   3: 55.409 ±(99.9%) 2.502 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    15.000 threads
+
+Iteration   4: 55.773 ±(99.9%) 2.976 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    16.000 threads
+
+
+# Run progress: 5.00% complete, ETA 00:06:34
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65334]
+# Fork: 2 of 4
+# Warmup Iteration   1: 58.897 ±(99.9%) 3.977 ns/op
+# Warmup Iteration   2: 56.189 ±(99.9%) 2.701 ns/op
+# Warmup Iteration   3: 54.606 ±(99.9%) 2.860 ns/op
+# Warmup Iteration   4: 56.909 ±(99.9%) 10.324 ns/op
+Iteration   1: 117.332 ±(99.9%) 9.267 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    13.000 threads
+
+Iteration   2: 148.913 ±(99.9%) 23.800 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    14.000 threads
+
+Iteration   3: 170.043 ±(99.9%) 32.045 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    15.000 threads
+
+Iteration   4: 112.470 ±(99.9%) 13.353 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    16.000 threads
+
+
+# Run progress: 10.00% complete, ETA 00:06:12
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65334]
+# Fork: 3 of 4
+# Warmup Iteration   1: 71.411 ±(99.9%) 31.086 ns/op
+# Warmup Iteration   2: 87.228 ±(99.9%) 12.903 ns/op
+# Warmup Iteration   3: 55.573 ±(99.9%) 3.031 ns/op
+# Warmup Iteration   4: 56.133 ±(99.9%) 2.700 ns/op
+Iteration   1: 68.738 ±(99.9%) 10.710 ns/op
+                 ·gc.alloc.rate:      0.014 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    13.000 threads
+
+Iteration   2: 83.785 ±(99.9%) 10.183 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    14.000 threads
+
+Iteration   3: 136.526 ±(99.9%) 29.525 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    15.000 threads
+
+Iteration   4: 73.988 ±(99.9%) 20.868 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    16.000 threads
+
+
+# Run progress: 15.00% complete, ETA 00:05:53
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65334]
+# Fork: 4 of 4
+# Warmup Iteration   1: 80.684 ±(99.9%) 21.921 ns/op
+# Warmup Iteration   2: 92.474 ±(99.9%) 36.978 ns/op
+# Warmup Iteration   3: 60.272 ±(99.9%) 14.478 ns/op
+# Warmup Iteration   4: 117.282 ±(99.9%) 28.323 ns/op
+Iteration   1: 108.631 ±(99.9%) 25.507 ns/op
+                 ·gc.alloc.rate:      0.014 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻³ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    13.000 threads
+
+Iteration   2: 55.260 ±(99.9%) 4.262 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    14.000 threads
+
+Iteration   3: 55.414 ±(99.9%) 11.740 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    15.000 threads
+
+Iteration   4: 55.322 ±(99.9%) 8.566 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    16.000 threads
+
+
+
+Result "here.benchmarks.HashCodeJmhTest.test_ApacheCommons3":
+  89.266 ±(99.9%) 38.615 ns/op [Average]
+  (min, avg, max) = (55.260, 89.266, 170.043), stdev = 37.925
+  CI (99.9%): [50.651, 127.880] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_ApacheCommons3:·gc.alloc.rate":
+  0.003 ±(99.9%) 0.005 MB/sec [Average]
+  (min, avg, max) = (0.001, 0.003, 0.014), stdev = 0.004
+  CI (99.9%): [≈ 0, 0.007] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_ApacheCommons3:·gc.alloc.rate.norm":
+  ≈ 10⁻⁴ B/op
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_ApacheCommons3:·gc.count":
+  ≈ 0 counts
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_ApacheCommons3:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 99.4%         RUNNABLE
+  0.6%         WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 79.1%  79.6% org.apache.commons.lang3.builder.HashCodeBuilder.append
+ 10.7%  10.8% here.benchmarks.HashCodeJmhTest.test_ApacheCommons3
+  9.5%   9.5% here.benchmarks.generated.HashCodeJmhTest_test_ApacheCommons3_jmhTest.test_ApacheCommons3_avgt_jmhStub
+  0.0%   0.0% here.benchmarks.generated.HashCodeJmhTest_test_ApacheCommons3_jmhTest.test_ApacheCommons3_AverageTime
+  0.0%   0.0% java.lang.Thread.currentThread
+  0.0%   0.0% org.openjdk.jmh.runner.InfraControl.preTearDown
+  0.0%   0.0% sun.misc.Unsafe.putObject
+  0.0%   0.0% org.openjdk.jmh.runner.InfraControl.announceWarmdownReady
+  0.0%   0.0% sun.misc.Unsafe.unpark
+  0.0%   0.0% sun.misc.Unsafe.getIntVolatile
+
+....[Thread state: WAITING].........................................................................
+  0.6% 100.0% sun.misc.Unsafe.park
+
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_ApacheCommons3:·threads.alive":
+  8.000 ±(99.9%) 0.001 threads [Average]
+  (min, avg, max) = (8.000, 8.000, 8.000), stdev = 0.001
+  CI (99.9%): [8.000, 8.000] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_ApacheCommons3:·threads.daemon":
+  7.000 ±(99.9%) 0.001 threads [Average]
+  (min, avg, max) = (7.000, 7.000, 7.000), stdev = 0.001
+  CI (99.9%): [7.000, 7.000] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_ApacheCommons3:·threads.started":
+  16.000 ±(99.9%) 0.001 threads [Maximum]
+  (min, avg, max) = (13.000, 14.500, 16.000), stdev = 1.155
+  CI (99.9%): [16.000, 16.000] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 4 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: here.benchmarks.HashCodeJmhTest.test_Guava
+
+# Run progress: 20.00% complete, ETA 00:05:33
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65346]
+# Fork: 1 of 4
+# Warmup Iteration   1: 288.346 ±(99.9%) 74.916 ns/op
+# Warmup Iteration   2: 226.335 ±(99.9%) 46.995 ns/op
+# Warmup Iteration   3: 125.495 ±(99.9%) 9.956 ns/op
+# Warmup Iteration   4: 157.044 ±(99.9%) 77.193 ns/op
+Iteration   1: 116.315 ±(99.9%) 20.100 ns/op
+                 ·gc.alloc.rate:                   2300.439 MB/sec
+                 ·gc.alloc.rate.norm:              88.001 B/op
+                 ·gc.churn.PS_Eden_Space:          2274.568 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     87.011 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.037 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.001 B/op
+                 ·gc.count:                        8.000 counts
+                 ·gc.time:                         5.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 13.000 threads
+
+Iteration   2: 168.326 ±(99.9%) 12.904 ns/op
+                 ·gc.alloc.rate:                   1588.300 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          1576.000 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     87.319 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.062 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.003 B/op
+                 ·gc.count:                        8.000 counts
+                 ·gc.time:                         7.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 14.000 threads
+
+Iteration   3: 139.551 ±(99.9%) 25.785 ns/op
+                 ·gc.alloc.rate:                   1917.191 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          1993.424 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     91.499 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.050 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.002 B/op
+                 ·gc.count:                        17.000 counts
+                 ·gc.time:                         12.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 15.000 threads
+
+Iteration   4: 159.629 ±(99.9%) 53.240 ns/op
+                 ·gc.alloc.rate:                   1667.746 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          1669.288 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     88.081 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.123 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.006 B/op
+                 ·gc.count:                        23.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 16.000 threads
+
+
+# Run progress: 25.00% complete, ETA 00:05:12
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65346]
+# Fork: 2 of 4
+# Warmup Iteration   1: 211.193 ±(99.9%) 70.084 ns/op
+# Warmup Iteration   2: 222.179 ±(99.9%) 22.087 ns/op
+# Warmup Iteration   3: 157.395 ±(99.9%) 66.242 ns/op
+# Warmup Iteration   4: 173.612 ±(99.9%) 41.763 ns/op
+Iteration   1: 225.927 ±(99.9%) 48.953 ns/op
+                 ·gc.alloc.rate:               1183.826 MB/sec
+                 ·gc.alloc.rate.norm:          88.001 B/op
+                 ·gc.churn.PS_Eden_Space:      1196.901 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm: 88.973 B/op
+                 ·gc.count:                    4.000 counts
+                 ·gc.time:                     9.000 ms
+                 ·stack:                       <delayed till summary>
+                 ·threads.alive:               9.000 threads
+                 ·threads.daemon:              7.000 threads
+                 ·threads.started:             13.000 threads
+
+Iteration   2: 149.606 ±(99.9%) 41.745 ns/op
+                 ·gc.alloc.rate:                   1794.848 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          1839.434 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     90.186 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.075 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.004 B/op
+                 ·gc.count:                        8.000 counts
+                 ·gc.time:                         8.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 14.000 threads
+
+Iteration   3: 205.658 ±(99.9%) 59.809 ns/op
+                 ·gc.alloc.rate:                   1295.396 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          1266.390 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     86.030 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.025 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.002 B/op
+                 ·gc.count:                        8.000 counts
+                 ·gc.time:                         5.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 15.000 threads
+
+Iteration   4: 204.042 ±(99.9%) 46.808 ns/op
+                 ·gc.alloc.rate:                   1315.812 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          1351.931 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     90.416 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.037 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.002 B/op
+                 ·gc.count:                        11.000 counts
+                 ·gc.time:                         17.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 16.000 threads
+
+
+# Run progress: 30.00% complete, ETA 00:04:52
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65346]
+# Fork: 3 of 4
+# Warmup Iteration   1: 245.797 ±(99.9%) 40.335 ns/op
+# Warmup Iteration   2: 297.684 ±(99.9%) 110.584 ns/op
+# Warmup Iteration   3: 253.927 ±(99.9%) 77.558 ns/op
+# Warmup Iteration   4: 141.456 ±(99.9%) 32.637 ns/op
+Iteration   1: 190.790 ±(99.9%) 22.216 ns/op
+                 ·gc.alloc.rate:                   1380.904 MB/sec
+                 ·gc.alloc.rate.norm:              88.001 B/op
+                 ·gc.churn.PS_Eden_Space:          1656.770 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     105.581 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.024 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.002 B/op
+                 ·gc.count:                        5.000 counts
+                 ·gc.time:                         5.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 13.000 threads
+
+Iteration   2: 139.223 ±(99.9%) 24.441 ns/op
+                 ·gc.alloc.rate:                   1926.455 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          2010.335 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     91.832 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.050 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.002 B/op
+                 ·gc.count:                        8.000 counts
+                 ·gc.time:                         5.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 14.000 threads
+
+Iteration   3: 126.513 ±(99.9%) 23.106 ns/op
+                 ·gc.alloc.rate:                   2121.397 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          2056.095 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     85.291 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.037 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.002 B/op
+                 ·gc.count:                        13.000 counts
+                 ·gc.time:                         8.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 15.000 threads
+
+Iteration   4: 130.136 ±(99.9%) 17.928 ns/op
+                 ·gc.alloc.rate:                   2060.941 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          2134.035 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     91.121 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.112 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.005 B/op
+                 ·gc.count:                        30.000 counts
+                 ·gc.time:                         16.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 16.000 threads
+
+
+# Run progress: 35.00% complete, ETA 00:04:31
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65346]
+# Fork: 4 of 4
+# Warmup Iteration   1: 166.487 ±(99.9%) 31.793 ns/op
+# Warmup Iteration   2: 124.959 ±(99.9%) 11.237 ns/op
+# Warmup Iteration   3: 125.352 ±(99.9%) 17.707 ns/op
+# Warmup Iteration   4: 123.574 ±(99.9%) 22.840 ns/op
+Iteration   1: 141.149 ±(99.9%) 30.791 ns/op
+                 ·gc.alloc.rate:                   1886.295 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          1859.569 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     86.753 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.147 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.007 B/op
+                 ·gc.count:                        38.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 13.000 threads
+
+Iteration   2: 130.091 ±(99.9%) 32.599 ns/op
+                 ·gc.alloc.rate:                   2062.825 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          2087.040 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     89.033 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.137 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.006 B/op
+                 ·gc.count:                        37.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 14.000 threads
+
+Iteration   3: 210.624 ±(99.9%) 18.952 ns/op
+                 ·gc.alloc.rate:                   1272.339 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          1300.002 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     89.913 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.025 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.002 B/op
+                 ·gc.count:                        14.000 counts
+                 ·gc.time:                         15.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 15.000 threads
+
+Iteration   4: 236.100 ±(99.9%) 46.081 ns/op
+                 ·gc.alloc.rate:                   1136.319 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          1108.102 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     85.815 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.074 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.006 B/op
+                 ·gc.count:                        19.000 counts
+                 ·gc.time:                         14.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 16.000 threads
+
+
+
+Result "here.benchmarks.HashCodeJmhTest.test_Guava":
+  167.105 ±(99.9%) 39.925 ns/op [Average]
+  (min, avg, max) = (116.315, 167.105, 236.100), stdev = 39.212
+  CI (99.9%): [127.180, 207.030] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Guava:·gc.alloc.rate":
+  1681.940 ±(99.9%) 383.744 MB/sec [Average]
+  (min, avg, max) = (1136.319, 1681.940, 2300.439), stdev = 376.888
+  CI (99.9%): [1298.195, 2065.684] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Guava:·gc.alloc.rate.norm":
+  88.000 ±(99.9%) 0.001 B/op [Average]
+  (min, avg, max) = (88.000, 88.000, 88.001), stdev = 0.001
+  CI (99.9%): [88.000, 88.001] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Guava:·gc.churn.PS_Eden_Space":
+  1711.243 ±(99.9%) 381.988 MB/sec [Average]
+  (min, avg, max) = (1108.102, 1711.243, 2274.568), stdev = 375.163
+  CI (99.9%): [1329.255, 2093.231] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Guava:·gc.churn.PS_Eden_Space.norm":
+  89.678 ±(99.9%) 4.819 B/op [Average]
+  (min, avg, max) = (85.291, 89.678, 105.581), stdev = 4.733
+  CI (99.9%): [84.860, 94.497] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Guava:·gc.churn.PS_Survivor_Space":
+  0.063 ±(99.9%) 0.045 MB/sec [Average]
+  (min, avg, max) = (≈ 0, 0.063, 0.147), stdev = 0.044
+  CI (99.9%): [0.018, 0.109] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Guava:·gc.churn.PS_Survivor_Space.norm":
+  0.003 ±(99.9%) 0.002 B/op [Average]
+  (min, avg, max) = (≈ 0, 0.003, 0.007), stdev = 0.002
+  CI (99.9%): [0.001, 0.005] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Guava:·gc.count":
+  251.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (4.000, 15.688, 38.000), stdev = 10.959
+  CI (99.9%): [251.000, 251.000] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Guava:·gc.time":
+  184.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (5.000, 11.500, 20.000), stdev = 5.621
+  CI (99.9%): [184.000, 184.000] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Guava:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 99.4%         RUNNABLE
+  0.6%         WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 51.1%  51.4% java.util.AbstractList.hashCode
+ 42.4%  42.6% java.util.Arrays.hashCode
+  3.6%   3.7% here.benchmarks.generated.HashCodeJmhTest_test_Guava_jmhTest.test_Guava_avgt_jmhStub
+  1.4%   1.4% here.benchmarks.HashCodeJmhTest.test_Guava
+  0.4%   0.4% here.benchmarks.HashCodeJmhTest$GuavaUser.hashCode
+  0.2%   0.2% java.util.ArrayList.iterator
+  0.1%   0.1% java.lang.Integer.valueOf
+  0.0%   0.0% here.benchmarks.generated.HashCodeJmhTest_test_Guava_jmhTest.test_Guava_AverageTime
+  0.0%   0.0% java.lang.Thread.currentThread
+  0.0%   0.0% java.util.concurrent.locks.AbstractQueuedSynchronizer.releaseShared
+
+....[Thread state: WAITING].........................................................................
+  0.6% 100.0% sun.misc.Unsafe.park
+
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Guava:·threads.alive":
+  8.063 ±(99.9%) 0.255 threads [Average]
+  (min, avg, max) = (8.000, 8.063, 9.000), stdev = 0.250
+  CI (99.9%): [7.808, 8.317] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Guava:·threads.daemon":
+  7.000 ±(99.9%) 0.001 threads [Average]
+  (min, avg, max) = (7.000, 7.000, 7.000), stdev = 0.001
+  CI (99.9%): [7.000, 7.000] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Guava:·threads.started":
+  16.000 ±(99.9%) 0.001 threads [Maximum]
+  (min, avg, max) = (13.000, 14.500, 16.000), stdev = 1.155
+  CI (99.9%): [16.000, 16.000] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 4 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: here.benchmarks.HashCodeJmhTest.test_Intellij
+
+# Run progress: 40.00% complete, ETA 00:04:10
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65372]
+# Fork: 1 of 4
+# Warmup Iteration   1: 100.873 ±(99.9%) 17.326 ns/op
+# Warmup Iteration   2: 83.586 ±(99.9%) 12.521 ns/op
+# Warmup Iteration   3: 51.175 ±(99.9%) 7.976 ns/op
+# Warmup Iteration   4: 51.434 ±(99.9%) 2.779 ns/op
+Iteration   1: 51.127 ±(99.9%) 4.140 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    13.000 threads
+
+Iteration   2: 50.547 ±(99.9%) 10.002 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    14.000 threads
+
+Iteration   3: 53.213 ±(99.9%) 7.362 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    15.000 threads
+
+Iteration   4: 51.035 ±(99.9%) 7.608 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    16.000 threads
+
+
+# Run progress: 45.00% complete, ETA 00:03:49
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65372]
+# Fork: 2 of 4
+# Warmup Iteration   1: 54.763 ±(99.9%) 10.004 ns/op
+# Warmup Iteration   2: 54.111 ±(99.9%) 7.528 ns/op
+# Warmup Iteration   3: 52.706 ±(99.9%) 2.406 ns/op
+# Warmup Iteration   4: 53.101 ±(99.9%) 8.606 ns/op
+Iteration   1: 53.331 ±(99.9%) 16.669 ns/op
+                 ·gc.alloc.rate:      0.018 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    13.000 threads
+
+Iteration   2: 53.104 ±(99.9%) 14.541 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    14.000 threads
+
+Iteration   3: 52.985 ±(99.9%) 5.553 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    15.000 threads
+
+Iteration   4: 52.920 ±(99.9%) 4.387 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    16.000 threads
+
+
+# Run progress: 50.00% complete, ETA 00:03:28
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65372]
+# Fork: 3 of 4
+# Warmup Iteration   1: 67.481 ±(99.9%) 11.658 ns/op
+# Warmup Iteration   2: 65.688 ±(99.9%) 5.702 ns/op
+# Warmup Iteration   3: 63.832 ±(99.9%) 7.518 ns/op
+# Warmup Iteration   4: 62.740 ±(99.9%) 7.250 ns/op
+Iteration   1: 64.960 ±(99.9%) 5.480 ns/op
+                 ·gc.alloc.rate:      0.014 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    13.000 threads
+
+Iteration   2: 64.922 ±(99.9%) 17.831 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    14.000 threads
+
+Iteration   3: 65.645 ±(99.9%) 5.039 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    15.000 threads
+
+Iteration   4: 64.205 ±(99.9%) 9.515 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    16.000 threads
+
+
+# Run progress: 55.00% complete, ETA 00:03:07
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65372]
+# Fork: 4 of 4
+# Warmup Iteration   1: 56.844 ±(99.9%) 5.508 ns/op
+# Warmup Iteration   2: 54.115 ±(99.9%) 2.350 ns/op
+# Warmup Iteration   3: 53.075 ±(99.9%) 4.910 ns/op
+# Warmup Iteration   4: 56.747 ±(99.9%) 9.836 ns/op
+Iteration   1: 61.049 ±(99.9%) 13.125 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    13.000 threads
+
+Iteration   2: 56.243 ±(99.9%) 7.876 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    14.000 threads
+
+Iteration   3: 111.242 ±(99.9%) 14.400 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    15.000 threads
+
+Iteration   4: 60.256 ±(99.9%) 20.082 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    16.000 threads
+
+
+
+Result "here.benchmarks.HashCodeJmhTest.test_Intellij":
+  60.424 ±(99.9%) 14.924 ns/op [Average]
+  (min, avg, max) = (50.547, 60.424, 111.242), stdev = 14.657
+  CI (99.9%): [45.500, 75.348] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Intellij:·gc.alloc.rate":
+  0.003 ±(99.9%) 0.005 MB/sec [Average]
+  (min, avg, max) = (0.001, 0.003, 0.018), stdev = 0.005
+  CI (99.9%): [≈ 0, 0.008] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Intellij:·gc.alloc.rate.norm":
+  ≈ 10⁻⁴ B/op
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Intellij:·gc.count":
+  ≈ 0 counts
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Intellij:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 99.5%         RUNNABLE
+  0.5%         WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 85.5%  86.0% here.benchmarks.HashCodeJmhTest.test_Intellij
+ 13.8%  13.8% here.benchmarks.generated.HashCodeJmhTest_test_Intellij_jmhTest.test_Intellij_avgt_jmhStub
+  0.0%   0.0% sun.misc.Unsafe.unpark
+  0.0%   0.0% sun.misc.Unsafe.compareAndSwapInt
+  0.0%   0.0% java.lang.Thread.currentThread
+  0.0%   0.0% org.openjdk.jmh.runner.InfraControl.announceWarmdownReady
+  0.0%   0.0% here.benchmarks.generated.HashCodeJmhTest_test_Intellij_jmhTest.test_Intellij_AverageTime
+  0.0%   0.0% sun.misc.Unsafe.putObject
+  0.0%   0.0% java.lang.Thread.isInterrupted
+  0.0%   0.0% java.util.concurrent.CountDownLatch.countDown
+
+....[Thread state: WAITING].........................................................................
+  0.5% 100.0% sun.misc.Unsafe.park
+
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Intellij:·threads.alive":
+  8.000 ±(99.9%) 0.001 threads [Average]
+  (min, avg, max) = (8.000, 8.000, 8.000), stdev = 0.001
+  CI (99.9%): [8.000, 8.000] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Intellij:·threads.daemon":
+  7.000 ±(99.9%) 0.001 threads [Average]
+  (min, avg, max) = (7.000, 7.000, 7.000), stdev = 0.001
+  CI (99.9%): [7.000, 7.000] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Intellij:·threads.started":
+  16.000 ±(99.9%) 0.001 threads [Maximum]
+  (min, avg, max) = (13.000, 14.500, 16.000), stdev = 1.155
+  CI (99.9%): [16.000, 16.000] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 4 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: here.benchmarks.HashCodeJmhTest.test_Java7
+
+# Run progress: 60.00% complete, ETA 00:02:46
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65400]
+# Fork: 1 of 4
+# Warmup Iteration   1: 191.047 ±(99.9%) 24.388 ns/op
+# Warmup Iteration   2: 273.370 ±(99.9%) 49.468 ns/op
+# Warmup Iteration   3: 245.587 ±(99.9%) 79.869 ns/op
+# Warmup Iteration   4: 235.032 ±(99.9%) 72.360 ns/op
+Iteration   1: 240.877 ±(99.9%) 33.132 ns/op
+                 ·gc.alloc.rate:                   1112.093 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          1059.922 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     83.872 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.025 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.002 B/op
+                 ·gc.count:                        3.000 counts
+                 ·gc.time:                         3.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 13.000 threads
+
+Iteration   2: 228.158 ±(99.9%) 43.048 ns/op
+                 ·gc.alloc.rate:                   1175.951 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          1201.990 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     89.949 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.025 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.002 B/op
+                 ·gc.count:                        4.000 counts
+                 ·gc.time:                         3.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 14.000 threads
+
+Iteration   3: 158.151 ±(99.9%) 54.337 ns/op
+                 ·gc.alloc.rate:                   1697.739 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          1836.186 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     95.176 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.012 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.001 B/op
+                 ·gc.count:                        8.000 counts
+                 ·gc.time:                         4.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 15.000 threads
+
+Iteration   4: 160.527 ±(99.9%) 42.495 ns/op
+                 ·gc.alloc.rate:                   1674.978 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          1649.113 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     86.641 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.037 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.002 B/op
+                 ·gc.count:                        11.000 counts
+                 ·gc.time:                         7.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 16.000 threads
+
+
+# Run progress: 65.00% complete, ETA 00:02:25
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65400]
+# Fork: 2 of 4
+# Warmup Iteration   1: 150.581 ±(99.9%) 12.836 ns/op
+# Warmup Iteration   2: 135.030 ±(99.9%) 34.192 ns/op
+# Warmup Iteration   3: 137.104 ±(99.9%) 4.464 ns/op
+# Warmup Iteration   4: 125.611 ±(99.9%) 9.268 ns/op
+Iteration   1: 123.935 ±(99.9%) 23.541 ns/op
+                 ·gc.alloc.rate:                   2166.900 MB/sec
+                 ·gc.alloc.rate.norm:              88.001 B/op
+                 ·gc.churn.PS_Eden_Space:          2107.101 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     85.572 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.074 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.003 B/op
+                 ·gc.count:                        12.000 counts
+                 ·gc.time:                         6.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 13.000 threads
+
+Iteration   2: 122.197 ±(99.9%) 13.429 ns/op
+                 ·gc.alloc.rate:                   2193.933 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          2272.441 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     91.149 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.174 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.007 B/op
+                 ·gc.count:                        28.000 counts
+                 ·gc.time:                         16.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 14.000 threads
+
+Iteration   3: 131.636 ±(99.9%) 12.772 ns/op
+                 ·gc.alloc.rate:                   2037.550 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          2073.999 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     89.574 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.162 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.007 B/op
+                 ·gc.count:                        31.000 counts
+                 ·gc.time:                         18.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 15.000 threads
+
+Iteration   4: 150.220 ±(99.9%) 31.997 ns/op
+                 ·gc.alloc.rate:                   1783.119 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          1723.395 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     85.053 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.062 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.003 B/op
+                 ·gc.count:                        18.000 counts
+                 ·gc.time:                         24.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 16.000 threads
+
+
+# Run progress: 70.00% complete, ETA 00:02:04
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65400]
+# Fork: 3 of 4
+# Warmup Iteration   1: 145.299 ±(99.9%) 22.511 ns/op
+# Warmup Iteration   2: 127.433 ±(99.9%) 14.680 ns/op
+# Warmup Iteration   3: 126.853 ±(99.9%) 2.490 ns/op
+# Warmup Iteration   4: 131.013 ±(99.9%) 12.233 ns/op
+Iteration   1: 127.656 ±(99.9%) 40.285 ns/op
+                 ·gc.alloc.rate:                   2100.748 MB/sec
+                 ·gc.alloc.rate.norm:              88.001 B/op
+                 ·gc.churn.PS_Eden_Space:          2019.846 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     84.612 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.012 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.001 B/op
+                 ·gc.count:                        12.000 counts
+                 ·gc.time:                         6.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 13.000 threads
+
+Iteration   2: 131.224 ±(99.9%) 11.045 ns/op
+                 ·gc.alloc.rate:                   2035.084 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          2124.028 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     91.846 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.098 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.004 B/op
+                 ·gc.count:                        27.000 counts
+                 ·gc.time:                         14.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 14.000 threads
+
+Iteration   3: 129.307 ±(99.9%) 40.262 ns/op
+                 ·gc.alloc.rate:                   2074.978 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          2101.991 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     89.146 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.186 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.008 B/op
+                 ·gc.count:                        40.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 15.000 threads
+
+Iteration   4: 131.126 ±(99.9%) 15.815 ns/op
+                 ·gc.alloc.rate:                   2046.384 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          2029.692 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     87.282 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.099 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.004 B/op
+                 ·gc.count:                        31.000 counts
+                 ·gc.time:                         17.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 16.000 threads
+
+
+# Run progress: 75.00% complete, ETA 00:01:43
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65400]
+# Fork: 4 of 4
+# Warmup Iteration   1: 143.022 ±(99.9%) 13.823 ns/op
+# Warmup Iteration   2: 123.969 ±(99.9%) 5.576 ns/op
+# Warmup Iteration   3: 118.737 ±(99.9%) 11.817 ns/op
+# Warmup Iteration   4: 119.582 ±(99.9%) 13.531 ns/op
+Iteration   1: 116.144 ±(99.9%) 10.486 ns/op
+                 ·gc.alloc.rate:                   2301.953 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          2287.813 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     87.459 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.025 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.001 B/op
+                 ·gc.count:                        16.000 counts
+                 ·gc.time:                         9.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 13.000 threads
+
+Iteration   2: 117.914 ±(99.9%) 11.362 ns/op
+                 ·gc.alloc.rate:                   2272.742 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          2303.431 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     89.188 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.112 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.004 B/op
+                 ·gc.count:                        35.000 counts
+                 ·gc.time:                         17.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 14.000 threads
+
+Iteration   3: 117.071 ±(99.9%) 9.103 ns/op
+                 ·gc.alloc.rate:                   2291.701 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          2355.088 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     90.434 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.112 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.004 B/op
+                 ·gc.count:                        37.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 15.000 threads
+
+Iteration   4: 136.723 ±(99.9%) 27.364 ns/op
+                 ·gc.alloc.rate:                   1962.680 MB/sec
+                 ·gc.alloc.rate.norm:              88.000 B/op
+                 ·gc.churn.PS_Eden_Space:          1930.823 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     86.572 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.161 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.007 B/op
+                 ·gc.count:                        28.000 counts
+                 ·gc.time:                         18.000 ms
+                 ·stack:                           <delayed till summary>
+                 ·threads.alive:                   8.000 threads
+                 ·threads.daemon:                  7.000 threads
+                 ·threads.started:                 16.000 threads
+
+
+
+Result "here.benchmarks.HashCodeJmhTest.test_Java7":
+  145.179 ±(99.9%) 38.129 ns/op [Average]
+  (min, avg, max) = (116.144, 145.179, 240.877), stdev = 37.448
+  CI (99.9%): [107.050, 183.308] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Java7:·gc.alloc.rate":
+  1933.033 ±(99.9%) 369.721 MB/sec [Average]
+  (min, avg, max) = (1112.093, 1933.033, 2301.953), stdev = 363.116
+  CI (99.9%): [1563.312, 2302.755] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Java7:·gc.alloc.rate.norm":
+  88.000 ±(99.9%) 0.001 B/op [Average]
+  (min, avg, max) = (88.000, 88.000, 88.001), stdev = 0.001
+  CI (99.9%): [88.000, 88.000] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Java7:·gc.churn.PS_Eden_Space":
+  1942.304 ±(99.9%) 382.582 MB/sec [Average]
+  (min, avg, max) = (1059.922, 1942.304, 2355.088), stdev = 375.747
+  CI (99.9%): [1559.722, 2324.886] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Java7:·gc.churn.PS_Eden_Space.norm":
+  88.345 ±(99.9%) 3.077 B/op [Average]
+  (min, avg, max) = (83.872, 88.345, 95.176), stdev = 3.022
+  CI (99.9%): [85.268, 91.423] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Java7:·gc.churn.PS_Survivor_Space":
+  0.086 ±(99.9%) 0.062 MB/sec [Average]
+  (min, avg, max) = (0.012, 0.086, 0.186), stdev = 0.061
+  CI (99.9%): [0.024, 0.148] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Java7:·gc.churn.PS_Survivor_Space.norm":
+  0.004 ±(99.9%) 0.002 B/op [Average]
+  (min, avg, max) = (0.001, 0.004, 0.008), stdev = 0.002
+  CI (99.9%): [0.001, 0.006] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Java7:·gc.count":
+  341.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (3.000, 21.313, 40.000), stdev = 12.175
+  CI (99.9%): [341.000, 341.000] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Java7:·gc.time":
+  201.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (3.000, 12.563, 24.000), stdev = 6.957
+  CI (99.9%): [201.000, 201.000] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Java7:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 99.5%         RUNNABLE
+  0.5%         WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 51.5%  51.8% java.util.AbstractList.hashCode
+ 41.5%  41.7% java.util.Arrays.hashCode
+  3.7%   3.7% here.benchmarks.generated.HashCodeJmhTest_test_Java7_jmhTest.test_Java7_avgt_jmhStub
+  1.5%   1.5% here.benchmarks.HashCodeJmhTest.test_Java7
+  0.5%   0.5% java.util.ArrayList.iterator
+  0.5%   0.5% here.benchmarks.HashCodeJmhTest$Java7User.hashCode
+  0.1%   0.1% java.lang.Integer.valueOf
+  0.0%   0.0% java.lang.Thread.currentThread
+  0.0%   0.0% here.benchmarks.generated.HashCodeJmhTest_test_Java7_jmhTest.test_Java7_AverageTime
+  0.0%   0.0% java.util.concurrent.locks.AbstractOwnableSynchronizer.setExclusiveOwnerThread
+  0.1%   0.1% <other>
+
+....[Thread state: WAITING].........................................................................
+  0.5% 100.0% sun.misc.Unsafe.park
+
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Java7:·threads.alive":
+  8.000 ±(99.9%) 0.001 threads [Average]
+  (min, avg, max) = (8.000, 8.000, 8.000), stdev = 0.001
+  CI (99.9%): [8.000, 8.000] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Java7:·threads.daemon":
+  7.000 ±(99.9%) 0.001 threads [Average]
+  (min, avg, max) = (7.000, 7.000, 7.000), stdev = 0.001
+  CI (99.9%): [7.000, 7.000] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Java7:·threads.started":
+  16.000 ±(99.9%) 0.001 threads [Maximum]
+  (min, avg, max) = (13.000, 14.500, 16.000), stdev = 1.155
+  CI (99.9%): [16.000, 16.000] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 4 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: here.benchmarks.HashCodeJmhTest.test_Lombok
+
+# Run progress: 80.00% complete, ETA 00:01:23
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65414]
+# Fork: 1 of 4
+# Warmup Iteration   1: 65.577 ±(99.9%) 9.795 ns/op
+# Warmup Iteration   2: 66.241 ±(99.9%) 10.833 ns/op
+# Warmup Iteration   3: 78.686 ±(99.9%) 10.136 ns/op
+# Warmup Iteration   4: 109.338 ±(99.9%) 28.814 ns/op
+Iteration   1: 84.341 ±(99.9%) 22.072 ns/op
+                 ·gc.alloc.rate:      0.010 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    13.000 threads
+
+Iteration   2: 75.325 ±(99.9%) 18.199 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    14.000 threads
+
+Iteration   3: 68.260 ±(99.9%) 5.130 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    15.000 threads
+
+Iteration   4: 68.214 ±(99.9%) 4.055 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    16.000 threads
+
+
+# Run progress: 85.00% complete, ETA 00:01:02
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65414]
+# Fork: 2 of 4
+# Warmup Iteration   1: 81.648 ±(99.9%) 10.954 ns/op
+# Warmup Iteration   2: 67.516 ±(99.9%) 12.629 ns/op
+# Warmup Iteration   3: 71.856 ±(99.9%) 0.612 ns/op
+# Warmup Iteration   4: 84.731 ±(99.9%) 7.297 ns/op
+Iteration   1: 70.049 ±(99.9%) 18.048 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    13.000 threads
+
+Iteration   2: 62.737 ±(99.9%) 7.450 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    14.000 threads
+
+Iteration   3: 63.050 ±(99.9%) 3.266 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    15.000 threads
+
+Iteration   4: 63.009 ±(99.9%) 7.014 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    16.000 threads
+
+
+# Run progress: 90.00% complete, ETA 00:00:41
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65414]
+# Fork: 3 of 4
+# Warmup Iteration   1: 58.464 ±(99.9%) 13.273 ns/op
+# Warmup Iteration   2: 55.681 ±(99.9%) 3.074 ns/op
+# Warmup Iteration   3: 54.769 ±(99.9%) 8.640 ns/op
+# Warmup Iteration   4: 55.404 ±(99.9%) 19.066 ns/op
+Iteration   1: 54.416 ±(99.9%) 5.517 ns/op
+                 ·gc.alloc.rate:      0.018 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻³ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    13.000 threads
+
+Iteration   2: 54.575 ±(99.9%) 5.087 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    14.000 threads
+
+Iteration   3: 54.463 ±(99.9%) 6.476 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    15.000 threads
+
+Iteration   4: 56.156 ±(99.9%) 18.192 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    16.000 threads
+
+
+# Run progress: 95.00% complete, ETA 00:00:20
+Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh6998532854165049119compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 65414]
+# Fork: 4 of 4
+# Warmup Iteration   1: 92.454 ±(99.9%) 10.546 ns/op
+# Warmup Iteration   2: 73.184 ±(99.9%) 11.634 ns/op
+# Warmup Iteration   3: 77.962 ±(99.9%) 11.074 ns/op
+# Warmup Iteration   4: 86.247 ±(99.9%) 34.442 ns/op
+Iteration   1: 79.393 ±(99.9%) 9.544 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    13.000 threads
+
+Iteration   2: 63.289 ±(99.9%) 9.994 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    14.000 threads
+
+Iteration   3: 64.974 ±(99.9%) 6.417 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    15.000 threads
+
+Iteration   4: 62.937 ±(99.9%) 1.967 ns/op
+                 ·gc.alloc.rate:      0.001 MB/sec
+                 ·gc.alloc.rate.norm: ≈ 10⁻⁵ B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+                 ·threads.alive:      8.000 threads
+                 ·threads.daemon:     7.000 threads
+                 ·threads.started:    16.000 threads
+
+
+
+Result "here.benchmarks.HashCodeJmhTest.test_Lombok":
+  65.324 ±(99.9%) 8.964 ns/op [Average]
+  (min, avg, max) = (54.416, 65.324, 84.341), stdev = 8.804
+  CI (99.9%): [56.360, 74.288] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Lombok:·gc.alloc.rate":
+  0.002 ±(99.9%) 0.005 MB/sec [Average]
+  (min, avg, max) = (0.001, 0.002, 0.018), stdev = 0.005
+  CI (99.9%): [≈ 0, 0.007] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Lombok:·gc.alloc.rate.norm":
+  ≈ 10⁻⁴ B/op
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Lombok:·gc.count":
+  ≈ 0 counts
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Lombok:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 99.5%         RUNNABLE
+  0.5%         WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 89.5%  89.9% here.benchmarks.HashCodeJmhTest.test_Lombok
+  9.8%   9.9% here.benchmarks.generated.HashCodeJmhTest_test_Lombok_jmhTest.test_Lombok_avgt_jmhStub
+  0.0%   0.0% java.lang.Thread.currentThread
+  0.0%   0.0% here.benchmarks.generated.HashCodeJmhTest_test_Lombok_jmhTest.test_Lombok_AverageTime
+  0.0%   0.0% sun.misc.Unsafe.compareAndSwapInt
+  0.0%   0.0% org.openjdk.jmh.results.BenchmarkTaskResult.add
+  0.0%   0.0% org.openjdk.jmh.runner.InfraControl.announceWarmdownReady
+  0.0%   0.0% java.util.concurrent.CountDownLatch.await
+  0.0%   0.0% java.util.concurrent.locks.AbstractQueuedSynchronizer.compareAndSetWaitStatus
+  0.0%   0.0% sun.misc.Unsafe.park
+
+....[Thread state: WAITING].........................................................................
+  0.5% 100.0% sun.misc.Unsafe.park
+
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Lombok:·threads.alive":
+  8.000 ±(99.9%) 0.001 threads [Average]
+  (min, avg, max) = (8.000, 8.000, 8.000), stdev = 0.001
+  CI (99.9%): [8.000, 8.000] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Lombok:·threads.daemon":
+  7.000 ±(99.9%) 0.001 threads [Average]
+  (min, avg, max) = (7.000, 7.000, 7.000), stdev = 0.001
+  CI (99.9%): [7.000, 7.000] (assumes normal distribution)
+
+Secondary result "here.benchmarks.HashCodeJmhTest.test_Lombok:·threads.started":
+  16.000 ±(99.9%) 0.001 threads [Maximum]
+  (min, avg, max) = (13.000, 14.500, 16.000), stdev = 1.155
+  CI (99.9%): [16.000, 16.000] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:06:55
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                    Mode  Cnt     Score     Error    Units
+HashCodeJmhTest.test_ApacheCommons3                          avgt   16    89.266 ±  38.615    ns/op
+HashCodeJmhTest.test_ApacheCommons3:·gc.alloc.rate           avgt   16     0.003 ±   0.005   MB/sec
+HashCodeJmhTest.test_ApacheCommons3:·gc.alloc.rate.norm      avgt   16    ≈ 10⁻⁴               B/op
+HashCodeJmhTest.test_ApacheCommons3:·gc.count                avgt   16       ≈ 0             counts
+HashCodeJmhTest.test_ApacheCommons3:·stack                   avgt            NaN                ---
+HashCodeJmhTest.test_ApacheCommons3:·threads.alive           avgt   16     8.000 ±   0.001  threads
+HashCodeJmhTest.test_ApacheCommons3:·threads.daemon          avgt   16     7.000 ±   0.001  threads
+HashCodeJmhTest.test_ApacheCommons3:·threads.started         avgt   16    16.000            threads
+HashCodeJmhTest.test_Guava                                   avgt   16   167.105 ±  39.925    ns/op
+HashCodeJmhTest.test_Guava:·gc.alloc.rate                    avgt   16  1681.940 ± 383.744   MB/sec
+HashCodeJmhTest.test_Guava:·gc.alloc.rate.norm               avgt   16    88.000 ±   0.001     B/op
+HashCodeJmhTest.test_Guava:·gc.churn.PS_Eden_Space           avgt   16  1711.243 ± 381.988   MB/sec
+HashCodeJmhTest.test_Guava:·gc.churn.PS_Eden_Space.norm      avgt   16    89.678 ±   4.819     B/op
+HashCodeJmhTest.test_Guava:·gc.churn.PS_Survivor_Space       avgt   16     0.063 ±   0.045   MB/sec
+HashCodeJmhTest.test_Guava:·gc.churn.PS_Survivor_Space.norm  avgt   16     0.003 ±   0.002     B/op
+HashCodeJmhTest.test_Guava:·gc.count                         avgt   16   251.000             counts
+HashCodeJmhTest.test_Guava:·gc.time                          avgt   16   184.000                 ms
+HashCodeJmhTest.test_Guava:·stack                            avgt            NaN                ---
+HashCodeJmhTest.test_Guava:·threads.alive                    avgt   16     8.063 ±   0.255  threads
+HashCodeJmhTest.test_Guava:·threads.daemon                   avgt   16     7.000 ±   0.001  threads
+HashCodeJmhTest.test_Guava:·threads.started                  avgt   16    16.000            threads
+HashCodeJmhTest.test_Intellij                                avgt   16    60.424 ±  14.924    ns/op
+HashCodeJmhTest.test_Intellij:·gc.alloc.rate                 avgt   16     0.003 ±   0.005   MB/sec
+HashCodeJmhTest.test_Intellij:·gc.alloc.rate.norm            avgt   16    ≈ 10⁻⁴               B/op
+HashCodeJmhTest.test_Intellij:·gc.count                      avgt   16       ≈ 0             counts
+HashCodeJmhTest.test_Intellij:·stack                         avgt            NaN                ---
+HashCodeJmhTest.test_Intellij:·threads.alive                 avgt   16     8.000 ±   0.001  threads
+HashCodeJmhTest.test_Intellij:·threads.daemon                avgt   16     7.000 ±   0.001  threads
+HashCodeJmhTest.test_Intellij:·threads.started               avgt   16    16.000            threads
+HashCodeJmhTest.test_Java7                                   avgt   16   145.179 ±  38.129    ns/op
+HashCodeJmhTest.test_Java7:·gc.alloc.rate                    avgt   16  1933.033 ± 369.721   MB/sec
+HashCodeJmhTest.test_Java7:·gc.alloc.rate.norm               avgt   16    88.000 ±   0.001     B/op
+HashCodeJmhTest.test_Java7:·gc.churn.PS_Eden_Space           avgt   16  1942.304 ± 382.582   MB/sec
+HashCodeJmhTest.test_Java7:·gc.churn.PS_Eden_Space.norm      avgt   16    88.345 ±   3.077     B/op
+HashCodeJmhTest.test_Java7:·gc.churn.PS_Survivor_Space       avgt   16     0.086 ±   0.062   MB/sec
+HashCodeJmhTest.test_Java7:·gc.churn.PS_Survivor_Space.norm  avgt   16     0.004 ±   0.002     B/op
+HashCodeJmhTest.test_Java7:·gc.count                         avgt   16   341.000             counts
+HashCodeJmhTest.test_Java7:·gc.time                          avgt   16   201.000                 ms
+HashCodeJmhTest.test_Java7:·stack                            avgt            NaN                ---
+HashCodeJmhTest.test_Java7:·threads.alive                    avgt   16     8.000 ±   0.001  threads
+HashCodeJmhTest.test_Java7:·threads.daemon                   avgt   16     7.000 ±   0.001  threads
+HashCodeJmhTest.test_Java7:·threads.started                  avgt   16    16.000            threads
+HashCodeJmhTest.test_Lombok                                  avgt   16    65.324 ±   8.964    ns/op
+HashCodeJmhTest.test_Lombok:·gc.alloc.rate                   avgt   16     0.002 ±   0.005   MB/sec
+HashCodeJmhTest.test_Lombok:·gc.alloc.rate.norm              avgt   16    ≈ 10⁻⁴               B/op
+HashCodeJmhTest.test_Lombok:·gc.count                        avgt   16       ≈ 0             counts
+HashCodeJmhTest.test_Lombok:·stack                           avgt            NaN                ---
+HashCodeJmhTest.test_Lombok:·threads.alive                   avgt   16     8.000 ±   0.001  threads
+HashCodeJmhTest.test_Lombok:·threads.daemon                  avgt   16     7.000 ±   0.001  threads
+HashCodeJmhTest.test_Lombok:·threads.started                 avgt   16    16.000            threads

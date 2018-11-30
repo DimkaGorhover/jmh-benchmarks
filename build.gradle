@@ -1,34 +1,78 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
 import static org.gradle.api.tasks.testing.TestResult.ResultType.FAILURE
 
 plugins {
     id "java"
     id "com.github.johnrengelman.shadow" version "4.0.3"
+    id "io.spring.dependency-management" version "1.0.6.RELEASE"
 }
 
 ext {
     junitPlatformVersion = "5.3.1"
     jmhVersion = "1.21"
+    lombokVersion = "1.18.2"
 }
 
 repositories {
+    mavenCentral()
     jcenter()
+}
+
+dependencyManagement {
+    
+    dependencies {
+
+        dependency "org.projectlombok:lombok:$lombokVersion"
+
+        dependency "org.openjdk.jmh:jmh-generator-annprocess:$jmhVersion"
+        dependency "org.openjdk.jmh:jmh-core:$jmhVersion"
+        dependency "org.openjdk.jmh:jmh-generator-bytecode:$jmhVersion"
+        dependency "org.openjdk.jmh:jmh-samples:$jmhVersion"
+
+        dependency "org.junit.jupiter:junit-jupiter-api:$junitPlatformVersion"
+        dependency "org.junit.jupiter:junit-jupiter-engine:$junitPlatformVersion"
+        dependency "org.junit.jupiter:junit-jupiter-params:$junitPlatformVersion"
+        dependency "org.junit.vintage:junit-vintage-engine:$junitPlatformVersion"
+    }
 }
 
 dependencies {
 
-    compile("org.openjdk.jmh:jmh-core:$jmhVersion")
-    compile("org.openjdk.jmh:jmh-generator-bytecode:$jmhVersion")
-    annotationProcessor("org.openjdk.jmh:jmh-generator-annprocess:$jmhVersion")
+    annotationProcessor("org.openjdk.jmh:jmh-generator-annprocess")
+    annotationProcessor("org.projectlombok:lombok")
 
-    annotationProcessor("org.projectlombok:lombok:1.18.2")
-    compileOnly("org.projectlombok:lombok:1.18.2")
-    testCompile("org.projectlombok:lombok:1.18.2")
+    compile("org.apache.commons:commons-lang3:3.8.1")
+    compile("com.google.guava:guava:27.0.1-jre")
+    compile("org.openjdk.jmh:jmh-core")
+    compile("org.openjdk.jmh:jmh-generator-bytecode")
 
-    testCompile("org.openjdk.jmh:jmh-samples:$jmhVersion")
-    testCompile("org.junit.jupiter:junit-jupiter-api:$junitPlatformVersion")
-    testCompile("org.junit.jupiter:junit-jupiter-engine:$junitPlatformVersion")
-    testCompile("org.junit.jupiter:junit-jupiter-params:$junitPlatformVersion")
-    testCompile("org.junit.vintage:junit-vintage-engine:$junitPlatformVersion")
+    compileOnly("org.projectlombok:lombok")
+    
+    testCompile("org.projectlombok:lombok")
+    
+    testCompile("org.openjdk.jmh:jmh-samples")
+    testCompile("org.junit.jupiter:junit-jupiter-api")
+    testCompile("org.junit.jupiter:junit-jupiter-engine")
+    testCompile("org.junit.jupiter:junit-jupiter-params")
+    testCompile("org.junit.vintage:junit-vintage-engine")
 }
 test {
 
