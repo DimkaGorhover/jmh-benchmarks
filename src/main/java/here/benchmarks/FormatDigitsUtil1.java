@@ -21,24 +21,14 @@ package here.benchmarks;
 
 /**
  * @author Horkhover Dmytro
- * @since 2018-11-30
+ * @since 2018-12-03
  */
-class FormatDigitsUtil2 {
+class FormatDigitsUtil1 {
 
-    private static final double[] CACHE = new double[12];
+    private FormatDigitsUtil1() { throw new UnsupportedOperationException(); }
 
-    static {
-        CACHE[0] = 1;
-        for (int i = 1; i < CACHE.length; i++) {
-            CACHE[i] = CACHE[i - 1] * 10;
-        }
-    }
-
-    private FormatDigitsUtil2() { throw new UnsupportedOperationException(); }
-
-    static double formatDouble_math_cached(double valueToFormat, int afterFloatingPoint) {
-        final double v = CACHE[afterFloatingPoint];
+    static double formatDouble_math(double valueToFormat, int afterFloatingPoint) {
+        final double v = Math.pow(10, afterFloatingPoint);
         return Math.round(valueToFormat * v) / v;
     }
-
 }

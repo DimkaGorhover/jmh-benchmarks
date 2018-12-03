@@ -19,26 +19,20 @@
 
 package here.benchmarks;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 /**
  * @author Horkhover Dmytro
- * @since 2018-11-30
+ * @since 2018-12-03
  */
-class FormatDigitsUtil2 {
+class FormatDigitsUtil3 {
 
-    private static final double[] CACHE = new double[12];
+    private FormatDigitsUtil3() { throw new UnsupportedOperationException(); }
 
-    static {
-        CACHE[0] = 1;
-        for (int i = 1; i < CACHE.length; i++) {
-            CACHE[i] = CACHE[i - 1] * 10;
-        }
+    static double formatDouble_BigDecimal(double valueToFormat, int afterFloatingPoint) {
+        return BigDecimal.valueOf(valueToFormat)
+                .setScale(afterFloatingPoint, RoundingMode.HALF_UP)
+                .doubleValue();
     }
-
-    private FormatDigitsUtil2() { throw new UnsupportedOperationException(); }
-
-    static double formatDouble_math_cached(double valueToFormat, int afterFloatingPoint) {
-        final double v = CACHE[afterFloatingPoint];
-        return Math.round(valueToFormat * v) / v;
-    }
-
 }

@@ -53,14 +53,14 @@ public class FormatDigitsUtilBenchmark {
 
     @Benchmark
     public double math_pow() {
-        return FormatDigitsUtil2.formatDouble_math(
+        return FormatDigitsUtil1.formatDouble_math(
                 ThreadLocalRandom.current().nextDouble(),
                 2);
     }
 
     @Benchmark
     public double bidDecimal() {
-        return FormatDigitsUtil2.formatDouble_BigDecimal(
+        return FormatDigitsUtil3.formatDouble_BigDecimal(
                 ThreadLocalRandom.current().nextDouble(),
                 2);
     }

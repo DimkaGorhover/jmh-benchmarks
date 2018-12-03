@@ -1,0 +1,64 @@
+Classfile /Users/mac/dev/git/jmh-benchmarks/src/main/java/here/benchmarks/FormatDigitsUtil1.class
+  Last modified Dec 3, 2018; size 448 bytes
+  MD5 checksum 3375e7ceb2013c8af6047cc5675614e1
+  Compiled from "FormatDigitsUtil1.java"
+class here.benchmarks.FormatDigitsUtil1
+  minor version: 0
+  major version: 55
+  flags: (0x0020) ACC_SUPER
+  this_class: #8                          // here/benchmarks/FormatDigitsUtil1
+  super_class: #9                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #9.#18         // java/lang/Object."<init>":()V
+   #2 = Class              #19            // java/lang/UnsupportedOperationException
+   #3 = Methodref          #2.#18         // java/lang/UnsupportedOperationException."<init>":()V
+   #4 = Double             10.0d
+   #6 = Methodref          #20.#21        // java/lang/Math.pow:(DD)D
+   #7 = Methodref          #20.#22        // java/lang/Math.round:(D)J
+   #8 = Class              #23            // here/benchmarks/FormatDigitsUtil1
+   #9 = Class              #24            // java/lang/Object
+  #10 = Utf8               <init>
+  #11 = Utf8               ()V
+  #12 = Utf8               Code
+  #13 = Utf8               LineNumberTable
+  #14 = Utf8               formatDouble_math
+  #15 = Utf8               (DI)D
+  #16 = Utf8               SourceFile
+  #17 = Utf8               FormatDigitsUtil1.java
+  #18 = NameAndType        #10:#11        // "<init>":()V
+  #19 = Utf8               java/lang/UnsupportedOperationException
+  #20 = Class              #25            // java/lang/Math
+  #21 = NameAndType        #26:#27        // pow:(DD)D
+  #22 = NameAndType        #28:#29        // round:(D)J
+  #23 = Utf8               here/benchmarks/FormatDigitsUtil1
+  #24 = Utf8               java/lang/Object
+  #25 = Utf8               java/lang/Math
+  #26 = Utf8               pow
+  #27 = Utf8               (DD)D
+  #28 = Utf8               round
+  #29 = Utf8               (D)J
+{
+  static double formatDouble_math(double, int);
+    descriptor: (DI)D
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=4, locals=5, args_size=2
+         0: ldc2_w        #4                  // double 10.0d
+         3: iload_2
+         4: i2d
+         5: invokestatic  #6                  // Method java/lang/Math.pow:(DD)D
+         8: dstore_3
+         9: dload_0
+        10: dload_3
+        11: dmul
+        12: invokestatic  #7                  // Method java/lang/Math.round:(D)J
+        15: l2d
+        16: dload_3
+        17: ddiv
+        18: dreturn
+      LineNumberTable:
+        line 31: 0
+        line 32: 9
+}
+SourceFile: "FormatDigitsUtil1.java"

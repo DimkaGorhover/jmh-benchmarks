@@ -1,0 +1,110 @@
+Classfile /Users/mac/dev/git/jmh-benchmarks/src/main/java/here/benchmarks/FormatDigitsUtil2.class
+  Last modified Dec 3, 2018; size 605 bytes
+  MD5 checksum 438d5f74951e98d6e0bbed1d2785c31a
+  Compiled from "FormatDigitsUtil2.java"
+class here.benchmarks.FormatDigitsUtil2
+  minor version: 0
+  major version: 55
+  flags: (0x0020) ACC_SUPER
+  this_class: #8                          // here/benchmarks/FormatDigitsUtil2
+  super_class: #9                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 3, attributes: 1
+Constant pool:
+   #1 = Methodref          #9.#22         // java/lang/Object."<init>":()V
+   #2 = Class              #23            // java/lang/UnsupportedOperationException
+   #3 = Methodref          #2.#22         // java/lang/UnsupportedOperationException."<init>":()V
+   #4 = Fieldref           #8.#24         // here/benchmarks/FormatDigitsUtil2.CACHE:[D
+   #5 = Methodref          #25.#26        // java/lang/Math.round:(D)J
+   #6 = Double             10.0d
+   #8 = Class              #27            // here/benchmarks/FormatDigitsUtil2
+   #9 = Class              #28            // java/lang/Object
+  #10 = Utf8               CACHE
+  #11 = Utf8               [D
+  #12 = Utf8               <init>
+  #13 = Utf8               ()V
+  #14 = Utf8               Code
+  #15 = Utf8               LineNumberTable
+  #16 = Utf8               formatDouble_math_cached
+  #17 = Utf8               (DI)D
+  #18 = Utf8               <clinit>
+  #19 = Utf8               StackMapTable
+  #20 = Utf8               SourceFile
+  #21 = Utf8               FormatDigitsUtil2.java
+  #22 = NameAndType        #12:#13        // "<init>":()V
+  #23 = Utf8               java/lang/UnsupportedOperationException
+  #24 = NameAndType        #10:#11        // CACHE:[D
+  #25 = Class              #29            // java/lang/Math
+  #26 = NameAndType        #30:#31        // round:(D)J
+  #27 = Utf8               here/benchmarks/FormatDigitsUtil2
+  #28 = Utf8               java/lang/Object
+  #29 = Utf8               java/lang/Math
+  #30 = Utf8               round
+  #31 = Utf8               (D)J
+{
+  static double formatDouble_math_cached(double, int);
+    descriptor: (DI)D
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=4, locals=5, args_size=2
+         0: getstatic     #4                  // Field CACHE:[D
+         3: iload_2
+         4: daload
+         5: dstore_3
+         6: dload_0
+         7: dload_3
+         8: dmul
+         9: invokestatic  #5                  // Method java/lang/Math.round:(D)J
+        12: l2d
+        13: dload_3
+        14: ddiv
+        15: dreturn
+      LineNumberTable:
+        line 40: 0
+        line 41: 6
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=6, locals=1, args_size=0
+         0: bipush        12
+         2: newarray       double
+         4: putstatic     #4                  // Field CACHE:[D
+         7: getstatic     #4                  // Field CACHE:[D
+        10: iconst_0
+        11: dconst_1
+        12: dastore
+        13: iconst_1
+        14: istore_0
+        15: iload_0
+        16: getstatic     #4                  // Field CACHE:[D
+        19: arraylength
+        20: if_icmpge     45
+        23: getstatic     #4                  // Field CACHE:[D
+        26: iload_0
+        27: getstatic     #4                  // Field CACHE:[D
+        30: iload_0
+        31: iconst_1
+        32: isub
+        33: daload
+        34: ldc2_w        #6                  // double 10.0d
+        37: dmul
+        38: dastore
+        39: iinc          0, 1
+        42: goto          15
+        45: return
+      LineNumberTable:
+        line 28: 0
+        line 31: 7
+        line 32: 13
+        line 33: 23
+        line 32: 39
+        line 35: 45
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 15
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 29
+}
+SourceFile: "FormatDigitsUtil2.java"

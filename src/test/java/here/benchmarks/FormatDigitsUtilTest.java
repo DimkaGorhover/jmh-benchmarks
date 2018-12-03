@@ -41,9 +41,9 @@ class FormatDigitsUtilTest {
                 double expected = formatDouble(source, format(afterF));
 
                 assertAll(
-                        () -> assertEquals(expected, FormatDigitsUtil2.formatDouble_math(source, afterF)),
+                        () -> assertEquals(expected, FormatDigitsUtil1.formatDouble_math(source, afterF)),
                         () -> assertEquals(expected, FormatDigitsUtil2.formatDouble_math_cached(source, afterF)),
-                        () -> assertEquals(expected, FormatDigitsUtil2.formatDouble_BigDecimal(source, afterF))
+                        () -> assertEquals(expected, FormatDigitsUtil3.formatDouble_BigDecimal(source, afterF))
                 );
             });
 

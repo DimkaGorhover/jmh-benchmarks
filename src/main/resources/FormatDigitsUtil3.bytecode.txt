@@ -1,0 +1,69 @@
+Classfile /Users/mac/dev/git/jmh-benchmarks/src/main/java/here/benchmarks/FormatDigitsUtil3.class
+  Last modified Dec 3, 2018; size 632 bytes
+  MD5 checksum 156ec5668c2b081c0f4b9596b75742ae
+  Compiled from "FormatDigitsUtil3.java"
+class here.benchmarks.FormatDigitsUtil3
+  minor version: 0
+  major version: 55
+  flags: (0x0020) ACC_SUPER
+  this_class: #8                          // here/benchmarks/FormatDigitsUtil3
+  super_class: #9                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #9.#18         // java/lang/Object."<init>":()V
+   #2 = Class              #19            // java/lang/UnsupportedOperationException
+   #3 = Methodref          #2.#18         // java/lang/UnsupportedOperationException."<init>":()V
+   #4 = Methodref          #20.#21        // java/math/BigDecimal.valueOf:(D)Ljava/math/BigDecimal;
+   #5 = Fieldref           #22.#23        // java/math/RoundingMode.HALF_UP:Ljava/math/RoundingMode;
+   #6 = Methodref          #20.#24        // java/math/BigDecimal.setScale:(ILjava/math/RoundingMode;)Ljava/math/BigDecimal;
+   #7 = Methodref          #20.#25        // java/math/BigDecimal.doubleValue:()D
+   #8 = Class              #26            // here/benchmarks/FormatDigitsUtil3
+   #9 = Class              #27            // java/lang/Object
+  #10 = Utf8               <init>
+  #11 = Utf8               ()V
+  #12 = Utf8               Code
+  #13 = Utf8               LineNumberTable
+  #14 = Utf8               formatDouble_BigDecimal
+  #15 = Utf8               (DI)D
+  #16 = Utf8               SourceFile
+  #17 = Utf8               FormatDigitsUtil3.java
+  #18 = NameAndType        #10:#11        // "<init>":()V
+  #19 = Utf8               java/lang/UnsupportedOperationException
+  #20 = Class              #28            // java/math/BigDecimal
+  #21 = NameAndType        #29:#30        // valueOf:(D)Ljava/math/BigDecimal;
+  #22 = Class              #31            // java/math/RoundingMode
+  #23 = NameAndType        #32:#33        // HALF_UP:Ljava/math/RoundingMode;
+  #24 = NameAndType        #34:#35        // setScale:(ILjava/math/RoundingMode;)Ljava/math/BigDecimal;
+  #25 = NameAndType        #36:#37        // doubleValue:()D
+  #26 = Utf8               here/benchmarks/FormatDigitsUtil3
+  #27 = Utf8               java/lang/Object
+  #28 = Utf8               java/math/BigDecimal
+  #29 = Utf8               valueOf
+  #30 = Utf8               (D)Ljava/math/BigDecimal;
+  #31 = Utf8               java/math/RoundingMode
+  #32 = Utf8               HALF_UP
+  #33 = Utf8               Ljava/math/RoundingMode;
+  #34 = Utf8               setScale
+  #35 = Utf8               (ILjava/math/RoundingMode;)Ljava/math/BigDecimal;
+  #36 = Utf8               doubleValue
+  #37 = Utf8               ()D
+{
+  static double formatDouble_BigDecimal(double, int);
+    descriptor: (DI)D
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=3, locals=3, args_size=2
+         0: dload_0
+         1: invokestatic  #4                  // Method java/math/BigDecimal.valueOf:(D)Ljava/math/BigDecimal;
+         4: iload_2
+         5: getstatic     #5                  // Field java/math/RoundingMode.HALF_UP:Ljava/math/RoundingMode;
+         8: invokevirtual #6                  // Method java/math/BigDecimal.setScale:(ILjava/math/RoundingMode;)Ljava/math/BigDecimal;
+        11: invokevirtual #7                  // Method java/math/BigDecimal.doubleValue:()D
+        14: dreturn
+      LineNumberTable:
+        line 34: 0
+        line 35: 8
+        line 36: 11
+        line 34: 14
+}
+SourceFile: "FormatDigitsUtil3.java"
