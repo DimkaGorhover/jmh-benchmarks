@@ -35,7 +35,8 @@ class ShiftBenchmarkTest {
     @DisplayName("Test_shift")
     void test_Test_shift() {
         var b = new ShiftBenchmark();
-        assertEquals(b.test_multi(), b.test_shift());
-        assertEquals(b.test_multi(), b.test_pow());
+        assertEquals(1024, b.test_pow());
+        assertEquals(1024, b.test_primitive_shift());
+        assertEquals(1024, b.test_shift());
     }
 }

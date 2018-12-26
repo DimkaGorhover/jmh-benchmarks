@@ -21,27 +21,66 @@ package here.benchmarks;
 
 import org.openjdk.jmh.annotations.*;
 
+import java.math.BigInteger;
 import java.util.concurrent.TimeUnit;
 
 
 /*
-------------------------------------------------------------------
-Benchmark                 | Mode | Cnt | Score |   Error | Units |
-------------------------------------------------------------------
-ShiftBenchmark.test_shift | avgt |  16 | 5.075 | ± 0.488 | ns/op |
-ShiftBenchmark.test_pow   | avgt |  16 | 5.067 | ± 0.705 | ns/op |
-ShiftBenchmark.test_multi | avgt |  16 | 5.547 | ± 0.779 | ns/op |
-------------------------------------------------------------------
+----------------------------------------------------------------
+Benchmark            | Mode | Cnt |   Score |    Error | Units |
+----------------------------------------------------------------
+test_primitive_shift | avgt |  16 |  21.212 | ±  8.229 | ns/op |
+test_shift           | avgt |  16 |  44.654 | ±  7.312 | ns/op |
+test_pow             | avgt |  16 | 115.304 | ± 23.546 | ns/op |
+----------------------------------------------------------------
 
 
-@CompilerControl(CompilerControl.Mode.DONT_INLINE)
-------------------------------------------------------------------
-Benchmark                 | Mode | Cnt | Score |   Error | Units |
-------------------------------------------------------------------
-ShiftBenchmark.test_pow   | avgt |  16 | 7.485 | ± 1.046 | ns/op |
-ShiftBenchmark.test_shift | avgt |  16 | 8.232 | ± 1.092 | ns/op |
-ShiftBenchmark.test_multi | avgt |  16 | 8.448 | ± 1.333 | ns/op |
-------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------
+Benchmark                                             | Mode | Cnt |    Score |      Error |   Units |
+------------------------------------------------------------------------------------------------------
+test_primitive_shift                                  | avgt |  16 |   21.212 | ±    8.229 |   ns/op |
+test_primitive_shift:·gc.alloc.rate                   | avgt |  16 | 3282.528 | ± 1194.248 |  MB/sec |
+test_primitive_shift:·gc.alloc.rate.norm              | avgt |  16 |   24.000 | ±    0.001 |    B/op |
+test_primitive_shift:·gc.churn.PS_Eden_Space          | avgt |  16 | 3354.749 | ± 1265.384 |  MB/sec |
+test_primitive_shift:·gc.churn.PS_Eden_Space.norm     | avgt |  16 |   24.483 | ±    2.204 |    B/op |
+test_primitive_shift:·gc.churn.PS_Survivor_Space      | avgt |  16 |    0.101 | ±    0.077 |  MB/sec |
+test_primitive_shift:·gc.churn.PS_Survivor_Space.norm | avgt |  16 |    0.001 | ±    0.001 |    B/op |
+test_primitive_shift:·gc.count                        | avgt |  16 |  120.000 |            |  counts |
+test_primitive_shift:·gc.time                         | avgt |  16 |  146.000 |            |      ms |
+test_primitive_shift:·stack                           | avgt |     |      NaN |            |     --- |
+test_primitive_shift:·threads.alive                   | avgt |  16 |    8.000 | ±    0.001 | threads |
+test_primitive_shift:·threads.daemon                  | avgt |  16 |    7.000 | ±    0.001 | threads |
+test_primitive_shift:·threads.started                 | avgt |  16 |   16.000 |            | threads |
+------------------------------------------------------------------------------------------------------
+test_shift                                            | avgt |  16 |   44.654 | ±    7.312 |   ns/op |
+test_shift:·gc.alloc.rate                             | avgt |  16 | 1387.080 | ±  194.810 |  MB/sec |
+test_shift:·gc.alloc.rate.norm                        | avgt |  16 |   24.000 | ±    0.001 |    B/op |
+test_shift:·gc.churn.PS_Eden_Space                    | avgt |  16 | 1412.039 | ±  331.636 |  MB/sec |
+test_shift:·gc.churn.PS_Eden_Space.norm               | avgt |  16 |   24.331 | ±    4.251 |    B/op |
+test_shift:·gc.churn.PS_Survivor_Space                | avgt |  16 |    0.038 | ±    0.044 |  MB/sec |
+test_shift:·gc.churn.PS_Survivor_Space.norm           | avgt |  16 |    0.001 | ±    0.001 |    B/op |
+test_shift:·gc.count                                  | avgt |  16 |   48.000 |            |  counts |
+test_shift:·gc.time                                   | avgt |  16 |   34.000 |            |      ms |
+test_shift:·stack                                     | avgt |     |      NaN |            |     --- |
+test_shift:·threads.alive                             | avgt |  16 |    8.000 | ±    0.001 | threads |
+test_shift:·threads.daemon                            | avgt |  16 |    7.000 | ±    0.001 | threads |
+test_shift:·threads.started                           | avgt |  16 |   16.000 |            | threads |
+------------------------------------------------------------------------------------------------------
+test_pow                                              | avgt |  16 |  115.304 | ±   23.546 |   ns/op |
+test_pow:·gc.alloc.rate                               | avgt |  16 | 2003.992 | ±  370.594 |  MB/sec |
+test_pow:·gc.alloc.rate.norm                          | avgt |  16 |   88.000 | ±    0.001 |    B/op |
+test_pow:·gc.churn.PS_Eden_Space                      | avgt |  16 | 2088.107 | ±  414.458 |  MB/sec |
+test_pow:·gc.churn.PS_Eden_Space.norm                 | avgt |  16 |   91.799 | ±    8.287 |    B/op |
+test_pow:·gc.churn.PS_Survivor_Space                  | avgt |  16 |    0.037 | ±    0.029 |  MB/sec |
+test_pow:·gc.churn.PS_Survivor_Space.norm             | avgt |  16 |    0.002 | ±    0.001 |    B/op |
+test_pow:·gc.count                                    | avgt |  16 |   59.000 |            |  counts |
+test_pow:·gc.time                                     | avgt |  16 |   68.000 |            |      ms |
+test_pow:·stack                                       | avgt |     |      NaN |            |     --- |
+test_pow:·threads.alive                               | avgt |  16 |    8.000 | ±    0.001 | threads |
+test_pow:·threads.daemon                              | avgt |  16 |    7.000 | ±    0.001 | threads |
+test_pow:·threads.started                             | avgt |  16 |   16.000 |            | threads |
+------------------------------------------------------------------------------------------------------
  */
 
 /**
@@ -56,21 +95,16 @@ ShiftBenchmark.test_multi | avgt |  16 | 8.448 | ± 1.333 | ns/op |
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 public class ShiftBenchmark {
 
-    @Benchmark
-    public int test_shift() { return shift(); }
-
-    @CompilerControl(CompilerControl.Mode.DONT_INLINE)
-    private int shift() { return 3 << 5; }
+    private static final BigInteger
+            ONE = BigInteger.valueOf(1),
+            TWO = BigInteger.valueOf(2);
 
     @Benchmark
-    public int test_multi() { return multi(); }
-
-    @CompilerControl(CompilerControl.Mode.DONT_INLINE)
-    private int multi() { return 3 * 32; }
+    public long test_primitive_shift() { return BigInteger.valueOf(1 << 10).longValueExact(); }
 
     @Benchmark
-    public int test_pow() { return pow(); }
+    public long test_shift() { return ONE.shiftLeft(10).longValueExact(); }
 
-    @CompilerControl(CompilerControl.Mode.DONT_INLINE)
-    private int pow() { return (int) (3 * Math.pow(2, 5)); }
+    @Benchmark
+    public long test_pow() { return TWO.pow(10).longValueExact(); }
 }
