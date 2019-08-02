@@ -124,7 +124,7 @@ test {
 }
 
 shadowJar {
-    archiveName = "benchmarks.jar"
+    archiveFileName = "benchmarks.jar"
     manifest {
         attributes "Main-Class": "here.benchmarks.App"
     }
