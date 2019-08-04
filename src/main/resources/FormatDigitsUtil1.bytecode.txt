@@ -2,7 +2,7 @@ Classfile /Users/mac/dev/git/jmh-benchmarks/src/main/java/here/benchmarks/Format
   Last modified Dec 3, 2018; size 448 bytes
   MD5 checksum 3375e7ceb2013c8af6047cc5675614e1
   Compiled from "FormatDigitsUtil1.java"
-class here.benchmarks.FormatDigitsUtil1
+class here.benchmarks.format.FormatDigitsUtil1
   minor version: 0
   major version: 55
   flags: (0x0020) ACC_SUPER

@@ -7,7 +7,7 @@
 # Timeout: 10 min per iteration
 # Threads: 4 threads, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: here.benchmarks.FormatDigitsUtilBenchmark.bidDecimal
+# Benchmark: here.benchmarks.format.FormatDigitsUtilBenchmark.bidDecimal
 
 # Run progress: 0.00% complete, ETA 00:04:16
 Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh1046689062310451013compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 55527]
@@ -266,52 +266,52 @@ Iteration   4: 809.075 ±(99.9%) 305.887 ns/op
 
 
 
-Result "here.benchmarks.FormatDigitsUtilBenchmark.bidDecimal":
+Result "here.benchmarks.format.FormatDigitsUtilBenchmark.bidDecimal":
   932.725 ±(99.9%) 158.047 ns/op [Average]
   (min, avg, max) = (802.232, 932.725, 1232.177), stdev = 155.223
   CI (99.9%): [774.678, 1090.772] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.bidDecimal:·gc.alloc.rate":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.bidDecimal:·gc.alloc.rate":
   767.650 ±(99.9%) 113.763 MB/sec [Average]
   (min, avg, max) = (562.692, 767.650, 872.624), stdev = 111.730
   CI (99.9%): [653.887, 881.413] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.bidDecimal:·gc.alloc.rate.norm":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.bidDecimal:·gc.alloc.rate.norm":
   230.051 ±(99.9%) 0.049 B/op [Average]
   (min, avg, max) = (230.013, 230.051, 230.209), stdev = 0.048
   CI (99.9%): [230.002, 230.099] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.bidDecimal:·gc.churn.PS_Eden_Space":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.bidDecimal:·gc.churn.PS_Eden_Space":
   784.171 ±(99.9%) 119.175 MB/sec [Average]
   (min, avg, max) = (556.988, 784.171, 903.811), stdev = 117.046
   CI (99.9%): [664.996, 903.346] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.bidDecimal:·gc.churn.PS_Eden_Space.norm":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.bidDecimal:·gc.churn.PS_Eden_Space.norm":
   235.003 ±(99.9%) 8.042 B/op [Average]
   (min, avg, max) = (220.928, 235.003, 247.491), stdev = 7.898
   CI (99.9%): [226.961, 243.045] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.bidDecimal:·gc.churn.PS_Survivor_Space":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.bidDecimal:·gc.churn.PS_Survivor_Space":
   0.067 ±(99.9%) 0.038 MB/sec [Average]
   (min, avg, max) = (0.012, 0.067, 0.124), stdev = 0.037
   CI (99.9%): [0.030, 0.105] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.bidDecimal:·gc.churn.PS_Survivor_Space.norm":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.bidDecimal:·gc.churn.PS_Survivor_Space.norm":
   0.020 ±(99.9%) 0.010 B/op [Average]
   (min, avg, max) = (0.004, 0.020, 0.038), stdev = 0.010
   CI (99.9%): [0.010, 0.030] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.bidDecimal:·gc.count":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.bidDecimal:·gc.count":
   265.000 ±(99.9%) 0.001 counts [Sum]
   (min, avg, max) = (7.000, 16.563, 33.000), stdev = 8.877
   CI (99.9%): [265.000, 265.000] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.bidDecimal:·gc.time":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.bidDecimal:·gc.time":
   188.000 ±(99.9%) 0.001 ms [Sum]
   (min, avg, max) = (5.000, 11.750, 17.000), stdev = 4.509
   CI (99.9%): [188.000, 188.000] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.bidDecimal:·stack":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.bidDecimal:·stack":
 Stack profiler:
 
 ....[Thread state distributions]....................................................................
@@ -335,17 +335,17 @@ Stack profiler:
   0.6% 100.0% sun.misc.Unsafe.park
 
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.bidDecimal:·threads.alive":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.bidDecimal:·threads.alive":
   8.000 ±(99.9%) 0.001 threads [Average]
   (min, avg, max) = (8.000, 8.000, 8.000), stdev = 0.001
   CI (99.9%): [8.000, 8.000] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.bidDecimal:·threads.daemon":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.bidDecimal:·threads.daemon":
   7.000 ±(99.9%) 0.001 threads [Average]
   (min, avg, max) = (7.000, 7.000, 7.000), stdev = 0.001
   CI (99.9%): [7.000, 7.000] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.bidDecimal:·threads.started":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.bidDecimal:·threads.started":
   16.000 ±(99.9%) 0.001 threads [Maximum]
   (min, avg, max) = (13.000, 14.500, 16.000), stdev = 1.155
   CI (99.9%): [16.000, 16.000] (assumes normal distribution)
@@ -360,7 +360,7 @@ Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.bidDecimal:·threads
 # Timeout: 10 min per iteration
 # Threads: 4 threads, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: here.benchmarks.FormatDigitsUtilBenchmark.math_cached
+# Benchmark: here.benchmarks.format.FormatDigitsUtilBenchmark.math_cached
 
 # Run progress: 25.00% complete, ETA 00:04:07
 Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh1046689062310451013compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 55533]
@@ -539,23 +539,23 @@ Iteration   4: 31.195 ±(99.9%) 14.170 ns/op
 
 
 
-Result "here.benchmarks.FormatDigitsUtilBenchmark.math_cached":
+Result "here.benchmarks.format.FormatDigitsUtilBenchmark.math_cached":
   20.565 ±(99.9%) 5.673 ns/op [Average]
   (min, avg, max) = (16.820, 20.565, 31.195), stdev = 5.572
   CI (99.9%): [14.892, 26.238] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.math_cached:·gc.alloc.rate":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.math_cached:·gc.alloc.rate":
   0.003 ±(99.9%) 0.004 MB/sec [Average]
   (min, avg, max) = (0.001, 0.003, 0.014), stdev = 0.004
   CI (99.9%): [≈ 0, 0.007] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.math_cached:·gc.alloc.rate.norm":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.math_cached:·gc.alloc.rate.norm":
   ≈ 10⁻⁵ B/op
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.math_cached:·gc.count":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.math_cached:·gc.count":
   ≈ 0 counts
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.math_cached:·stack":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.math_cached:·stack":
 Stack profiler:
 
 ....[Thread state distributions]....................................................................
@@ -578,17 +578,17 @@ Stack profiler:
   0.6% 100.0% sun.misc.Unsafe.park
 
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.math_cached:·threads.alive":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.math_cached:·threads.alive":
   8.000 ±(99.9%) 0.001 threads [Average]
   (min, avg, max) = (8.000, 8.000, 8.000), stdev = 0.001
   CI (99.9%): [8.000, 8.000] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.math_cached:·threads.daemon":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.math_cached:·threads.daemon":
   7.000 ±(99.9%) 0.001 threads [Average]
   (min, avg, max) = (7.000, 7.000, 7.000), stdev = 0.001
   CI (99.9%): [7.000, 7.000] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.math_cached:·threads.started":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.math_cached:·threads.started":
   16.000 ±(99.9%) 0.001 threads [Maximum]
   (min, avg, max) = (13.000, 14.500, 16.000), stdev = 1.155
   CI (99.9%): [16.000, 16.000] (assumes normal distribution)
@@ -603,7 +603,7 @@ Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.math_cached:·thread
 # Timeout: 10 min per iteration
 # Threads: 4 threads, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: here.benchmarks.FormatDigitsUtilBenchmark.math_pow
+# Benchmark: here.benchmarks.format.FormatDigitsUtilBenchmark.math_pow
 
 # Run progress: 50.00% complete, ETA 00:02:45
 Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh1046689062310451013compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 55541]
@@ -782,23 +782,23 @@ Iteration   4: 17.409 ±(99.9%) 4.075 ns/op
 
 
 
-Result "here.benchmarks.FormatDigitsUtilBenchmark.math_pow":
+Result "here.benchmarks.format.FormatDigitsUtilBenchmark.math_pow":
   20.325 ±(99.9%) 4.087 ns/op [Average]
   (min, avg, max) = (16.426, 20.325, 31.206), stdev = 4.014
   CI (99.9%): [16.238, 24.412] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.math_pow:·gc.alloc.rate":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.math_pow:·gc.alloc.rate":
   0.003 ±(99.9%) 0.005 MB/sec [Average]
   (min, avg, max) = (0.001, 0.003, 0.014), stdev = 0.005
   CI (99.9%): [≈ 0, 0.008] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.math_pow:·gc.alloc.rate.norm":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.math_pow:·gc.alloc.rate.norm":
   ≈ 10⁻⁵ B/op
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.math_pow:·gc.count":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.math_pow:·gc.count":
   ≈ 0 counts
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.math_pow:·stack":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.math_pow:·stack":
 Stack profiler:
 
 ....[Thread state distributions]....................................................................
@@ -812,7 +812,7 @@ Stack profiler:
   0.0%   0.0% java.lang.Thread.isInterrupted
   0.0%   0.0% java.lang.Thread.currentThread
   0.0%   0.0% java.util.concurrent.locks.ReentrantLock$NonfairSync.tryAcquire
-  0.0%   0.0% here.benchmarks.FormatDigitsUtil.formatDouble_math
+  0.0%   0.0% here.benchmarks.format.FormatDigitsUtil.formatDouble_math
   0.0%   0.0% sun.misc.Unsafe.unpark
   0.0%   0.0% java.util.concurrent.atomic.AtomicInteger.getAndDecrement
   0.0%   0.0% java.util.concurrent.locks.AbstractQueuedSynchronizer.compareAndSetWaitStatus
@@ -821,17 +821,17 @@ Stack profiler:
   0.6% 100.0% sun.misc.Unsafe.park
 
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.math_pow:·threads.alive":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.math_pow:·threads.alive":
   8.000 ±(99.9%) 0.001 threads [Average]
   (min, avg, max) = (8.000, 8.000, 8.000), stdev = 0.001
   CI (99.9%): [8.000, 8.000] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.math_pow:·threads.daemon":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.math_pow:·threads.daemon":
   7.000 ±(99.9%) 0.001 threads [Average]
   (min, avg, max) = (7.000, 7.000, 7.000), stdev = 0.001
   CI (99.9%): [7.000, 7.000] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.math_pow:·threads.started":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.math_pow:·threads.started":
   16.000 ±(99.9%) 0.001 threads [Maximum]
   (min, avg, max) = (13.000, 14.500, 16.000), stdev = 1.155
   CI (99.9%): [16.000, 16.000] (assumes normal distribution)
@@ -846,7 +846,7 @@ Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.math_pow:·threads.s
 # Timeout: 10 min per iteration
 # Threads: 4 threads, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: here.benchmarks.FormatDigitsUtilBenchmark.string
+# Benchmark: here.benchmarks.format.FormatDigitsUtilBenchmark.string
 
 # Run progress: 75.00% complete, ETA 00:01:22
 Forking using command: [/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java, -XX:CompileCommandFile=/var/folders/jp/wm4bjsl52034y48svs2sx2w80000gn/T/jmh1046689062310451013compilecommand, -cp, build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 55569]
@@ -1105,52 +1105,52 @@ Iteration   4: 2553.949 ±(99.9%) 257.732 ns/op
 
 
 
-Result "here.benchmarks.FormatDigitsUtilBenchmark.string":
+Result "here.benchmarks.format.FormatDigitsUtilBenchmark.string":
   2238.092 ±(99.9%) 274.791 ns/op [Average]
   (min, avg, max) = (1814.447, 2238.092, 2706.478), stdev = 269.882
   CI (99.9%): [1963.301, 2512.883] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.string:·gc.alloc.rate":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.string:·gc.alloc.rate":
   2010.224 ±(99.9%) 247.155 MB/sec [Average]
   (min, avg, max) = (1615.951, 2010.224, 2406.077), stdev = 242.739
   CI (99.9%): [1763.069, 2257.379] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.string:·gc.alloc.rate.norm":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.string:·gc.alloc.rate.norm":
   1456.302 ±(99.9%) 25.187 B/op [Average]
   (min, avg, max) = (1432.268, 1456.302, 1480.262), stdev = 24.737
   CI (99.9%): [1431.116, 1481.489] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.string:·gc.churn.PS_Eden_Space":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.string:·gc.churn.PS_Eden_Space":
   2022.733 ±(99.9%) 248.679 MB/sec [Average]
   (min, avg, max) = (1568.009, 2022.733, 2543.725), stdev = 244.236
   CI (99.9%): [1774.054, 2271.412] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.string:·gc.churn.PS_Eden_Space.norm":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.string:·gc.churn.PS_Eden_Space.norm":
   1466.229 ±(99.9%) 55.372 B/op [Average]
   (min, avg, max) = (1337.321, 1466.229, 1573.389), stdev = 54.383
   CI (99.9%): [1410.856, 1521.601] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.string:·gc.churn.PS_Survivor_Space":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.string:·gc.churn.PS_Survivor_Space":
   0.053 ±(99.9%) 0.030 MB/sec [Average]
   (min, avg, max) = (0.012, 0.053, 0.125), stdev = 0.029
   CI (99.9%): [0.023, 0.083] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.string:·gc.churn.PS_Survivor_Space.norm":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.string:·gc.churn.PS_Survivor_Space.norm":
   0.038 ±(99.9%) 0.022 B/op [Average]
   (min, avg, max) = (0.010, 0.038, 0.097), stdev = 0.021
   CI (99.9%): [0.016, 0.060] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.string:·gc.count":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.string:·gc.count":
   317.000 ±(99.9%) 0.001 counts [Sum]
   (min, avg, max) = (11.000, 19.813, 30.000), stdev = 5.811
   CI (99.9%): [317.000, 317.000] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.string:·gc.time":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.string:·gc.time":
   259.000 ±(99.9%) 0.001 ms [Sum]
   (min, avg, max) = (11.000, 16.188, 21.000), stdev = 2.880
   CI (99.9%): [259.000, 259.000] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.string:·stack":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.string:·stack":
 Stack profiler:
 
 ....[Thread state distributions]....................................................................
@@ -1174,17 +1174,17 @@ Stack profiler:
   0.5% 100.0% sun.misc.Unsafe.park
 
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.string:·threads.alive":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.string:·threads.alive":
   8.000 ±(99.9%) 0.001 threads [Average]
   (min, avg, max) = (8.000, 8.000, 8.000), stdev = 0.001
   CI (99.9%): [8.000, 8.000] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.string:·threads.daemon":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.string:·threads.daemon":
   7.000 ±(99.9%) 0.001 threads [Average]
   (min, avg, max) = (7.000, 7.000, 7.000), stdev = 0.001
   CI (99.9%): [7.000, 7.000] (assumes normal distribution)
 
-Secondary result "here.benchmarks.FormatDigitsUtilBenchmark.string:·threads.started":
+Secondary result "here.benchmarks.format.FormatDigitsUtilBenchmark.string:·threads.started":
   16.000 ±(99.9%) 0.001 threads [Maximum]
   (min, avg, max) = (13.000, 14.500, 16.000), stdev = 1.155
   CI (99.9%): [16.000, 16.000] (assumes normal distribution)

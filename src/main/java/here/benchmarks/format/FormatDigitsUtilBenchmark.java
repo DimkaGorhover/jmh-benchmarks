@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package here.benchmarks;
+package here.benchmarks.format;
 
 import org.openjdk.jmh.annotations.*;
 

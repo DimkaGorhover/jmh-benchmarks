@@ -1,5 +1,5 @@
 //@formatter:off
-package here.benchmarks;
+package here.benchmarks.format;
 
 import java.text.DecimalFormat;
 

@@ -1,12 +1,16 @@
-package here.benchmarks;
+package here.benchmarks.format;
 
+import here.benchmarks.format.FormatDigitsUtil;
+import here.benchmarks.format.FormatDigitsUtil1;
+import here.benchmarks.format.FormatDigitsUtil2;
+import here.benchmarks.format.FormatDigitsUtil3;
 import org.junit.jupiter.api.*;
 
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 
-import static here.benchmarks.FormatDigitsUtil.*;
+import static here.benchmarks.format.FormatDigitsUtil.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**

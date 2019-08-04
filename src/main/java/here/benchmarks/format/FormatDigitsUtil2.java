@@ -17,22 +17,28 @@
  * under the License.
  */
 
-package here.benchmarks;
-
-import java.math.BigDecimal;
-import java.math.RoundingMode;
+package here.benchmarks.format;
 
 /**
  * @author Horkhover Dmytro
- * @since 2018-12-03
+ * @since 2018-11-30
  */
-class FormatDigitsUtil3 {
+class FormatDigitsUtil2 {
 
-    private FormatDigitsUtil3() { throw new UnsupportedOperationException(); }
+    private static final double[] CACHE = new double[12];
 
-    static double formatDouble_BigDecimal(double valueToFormat, int afterFloatingPoint) {
-        return BigDecimal.valueOf(valueToFormat)
-                .setScale(afterFloatingPoint, RoundingMode.HALF_UP)
-                .doubleValue();
+    static {
+        CACHE[0] = 1;
+        for (int i = 1; i < CACHE.length; i++) {
+            CACHE[i] = CACHE[i - 1] * 10;
+        }
     }
+
+    private FormatDigitsUtil2() { throw new UnsupportedOperationException(); }
+
+    static double formatDouble_math_cached(double valueToFormat, int afterFloatingPoint) {
+        final double v = CACHE[afterFloatingPoint];
+        return Math.round(valueToFormat * v) / v;
+    }
+
 }

@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package here.benchmarks;
+package here.benchmarks.format;
 
 /**
  * @author Horkhover Dmytro
