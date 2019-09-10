@@ -11,15 +11,20 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class PowBenchmarkTest {
 
+    private static final double DELTA = Math.pow(10, -15);
+
     @Test
     @DisplayName("Setup")
     void test_Setup() throws Exception {
+
         for (int i = 0; i < 1 << 13; i++) {
+
             PowBenchmark b = new PowBenchmark();
             b.pow = 10;
             b.setup();
-            assertEquals(b.math(), b.loop(), 0.000000000000001);
-            assertEquals(b.math(), b.recursion(), 0.000000000000001);
+
+            assertEquals(b.math(), b.loop(), DELTA);
+            assertEquals(b.math(), b.binaryRecursion(), DELTA);
         }
     }
 }

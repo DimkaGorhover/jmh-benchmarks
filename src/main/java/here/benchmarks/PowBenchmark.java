@@ -6,12 +6,12 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
 /*
---------------------------------------------------------------------------
-Benchmark              | (pow) | Mode | Cnt |   Score |    Error | Units |
-PowBenchmark.recursion |    10 | avgt |  16 | 178.445 | ±  8.424 | ns/op |
-PowBenchmark.loop      |    10 | avgt |  16 | 206.389 | ± 75.351 | ns/op |
-PowBenchmark.math      |    10 | avgt |  16 | 210.494 | ± 17.344 | ns/op |
---------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Benchmark                    | (pow) | Mode | Cnt |   Score |    Error | Units |
+PowBenchmark.binaryRecursion |    10 | avgt |  16 | 178.445 | ±  8.424 | ns/op |
+PowBenchmark.loop            |    10 | avgt |  16 | 206.389 | ± 75.351 | ns/op |
+PowBenchmark.math            |    10 | avgt |  16 | 210.494 | ± 17.344 | ns/op |
+--------------------------------------------------------------------------------
  */
 
 /**
@@ -33,27 +33,29 @@ public class PowBenchmark {
     public double value;
 
     @Setup(Level.Invocation)
-    public void setup() {
-        value = ThreadLocalRandom.current().nextDouble();
-    }
+    public void setup() { value = ThreadLocalRandom.current().nextDouble(); }
 
-    public static double recursionPow(double v, int pow) {
+    public static double binaryRecursionPow(double v, int pow) {
         switch (pow) {
+            case -4: return v / v / v / v / v / v;
+            case -3: return v / v / v / v / v;
+            case -2: return v / v / v / v;
+            case -1: return v / v / v;
             case 0: return 1;
             case 1: return v;
             case 2: return v * v;
             case 3: return v * v * v;
             case 4: return v * v * v * v;
         }
-        double half = recursionPow(v, pow / 2);
-        return half * half * (pow % 2 == 0 ? 1 : v);
+        double half = binaryRecursionPow(v, pow / 2);
+        return half * half * binaryRecursionPow(v, pow % 2);
     }
 
     @Benchmark
     public double math() { return Math.pow(value, pow); }
 
     @Benchmark
-    public double recursion() { return recursionPow(value, pow); }
+    public double binaryRecursion() { return binaryRecursionPow(value, pow); }
 
     @Benchmark
     public double loop() {

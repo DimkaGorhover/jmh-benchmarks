@@ -9,7 +9,7 @@ class IncrementBenchmarkTest {
 
     @Test
     void name() {
-        var b = new IncrementBenchmark();
+        IncrementBenchmark b = new IncrementBenchmark();
         b.iterations = 100;
         b.setup();
 
