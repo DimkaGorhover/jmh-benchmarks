@@ -2,7 +2,6 @@ package here.benchmarks;
 
 import org.openjdk.jmh.annotations.*;
 
-import java.io.IOException;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
@@ -81,7 +80,7 @@ public class StringAppenderBenchmark {
 
     @SuppressWarnings("ForLoopReplaceableByForEach")
     @Benchmark
-    public String StringBuilder() throws IOException {
+    public String StringBuilder() {
         StringBuilder sb = new StringBuilder(size);
         for (int i = 0; i < list.length; i++) {
             sb.append(list[i]);
@@ -91,7 +90,7 @@ public class StringAppenderBenchmark {
 
     @SuppressWarnings({"ForLoopReplaceableByForEach", "StringBufferMayBeStringBuilder"})
     @Benchmark
-    public String StringBuffer() throws IOException {
+    public String StringBuffer() {
         StringBuffer sb = new StringBuffer(size);
         for (int i = 0; i < list.length; i++) {
             sb.append(list[i]);

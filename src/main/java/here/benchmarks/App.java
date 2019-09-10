@@ -36,7 +36,7 @@ public class App {
 
                 .threads(cli.getThreads().orElse(Runtime.getRuntime().availableProcessors()))
 
-                .include("StringAppenderBenchmark")
+                .include("PowBenchmark")
 
                 .addProfiler(GCProfiler.class)
                 .addProfiler(HotspotThreadProfiler.class)

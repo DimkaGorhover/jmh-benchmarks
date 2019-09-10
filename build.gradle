@@ -17,15 +17,14 @@
  * under the License.
  */
 
-import static org.gradle.api.tasks.testing.TestResult.ResultType.FAILURE
-
 plugins {
     id "java"
     id "com.github.johnrengelman.shadow" version "4.0.3"
-    id "io.spring.dependency-management" version "1.0.6.RELEASE"
+    id "io.spring.dependency-management" version "1.0.8.RELEASE"
 }
 
 ext {
+    javaVersion = JavaVersion.VERSION_11
     junitPlatformVersion = "5.3.1"
     jmhVersion = "1.21"
     lombokVersion = "1.18.2"
@@ -35,6 +34,9 @@ repositories {
     mavenCentral()
     jcenter()
 }
+
+//sourceCompatibility = javaVersion
+//targetCompatibility = javaVersion
 
 dependencyManagement {
     
@@ -88,7 +90,7 @@ test {
 
     afterTest { desc, result ->
         //org.gradle.api.internal.tasks.testing.results.DefaultTestResult
-        if (result.resultType == FAILURE) {
+        if (result.resultType == TestResult.ResultType.FAILURE) {
             result.failures.each { failure ->
                 def sep = ('=' * 80)
                 if (failure instanceof Throwable) {
@@ -121,6 +123,11 @@ test {
             (result.failedTestCount > 0 ? System.err : System.out).printf("%n${sep}%n${startItem}${output}${endItem}%n${sep}%n%n")
         }
     }
+}
+
+wrapper {
+    gradleVersion = "5.6.1"
+    distributionType = Wrapper.DistributionType.ALL
 }
 
 shadowJar {
