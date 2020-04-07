@@ -36,7 +36,7 @@ public class App {
 
                 .threads(cli.getThreads().orElse(Runtime.getRuntime().availableProcessors()))
 
-                .include("GausBenchmark")
+                .include("MethodHandleBenchmark")
 
                 .addProfiler(GCProfiler.class)
                 .addProfiler(HotspotThreadProfiler.class)
