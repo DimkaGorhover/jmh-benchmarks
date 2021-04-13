@@ -1,0 +1,1214 @@
+# JMH version: 1.29
+# VM version: JDK 1.8.0_282, OpenJDK 64-Bit Server VM, 25.282-b08
+# VM invoker: /Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=UA -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint
+# Warmup: 4 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarks.SplitAndGetBenchmark.split
+# Parameters: (pos = 15, size = 1000)
+
+# Run progress: 0.00% complete, ETA 00:04:16
+Forking using command: [/Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java, -Dfile.encoding=UTF-8, -Duser.country=UA, -Duser.language=en, -Duser.variant, -XX:CompileCommandFile=/var/folders/t4/l12fk0ms6x5dq15ywpb3h0400000gn/T/jmh2484061297558712575compilecommand, -cp, /Users/dhorkhover/dev/personal/jmh-benchmarks/build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 49778]
+# Fork: 1 of 4
+# Warmup Iteration   1: 124295.364 ±(99.9%) 7367.669 ns/op
+# Warmup Iteration   2: 81573.511 ±(99.9%) 5472.690 ns/op
+# Warmup Iteration   3: 81568.377 ±(99.9%) 6856.129 ns/op
+# Warmup Iteration   4: 81502.013 ±(99.9%) 6782.902 ns/op
+Iteration   1: 81484.304 ±(99.9%) 6114.654 ns/op
+                 ·gc.alloc.rate:                   7374.331 MB/sec
+                 ·gc.alloc.rate.norm:              98312.021 B/op
+                 ·gc.churn.PS_Eden_Space:          7455.576 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     99395.153 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.657 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 8.765 B/op
+                 ·gc.count:                        36.000 counts
+                 ·gc.time:                         21.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 81666.901 ±(99.9%) 5358.053 ns/op
+                 ·gc.alloc.rate:                   7339.534 MB/sec
+                 ·gc.alloc.rate.norm:              98312.022 B/op
+                 ·gc.churn.PS_Eden_Space:          7356.689 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     98541.809 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.585 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 7.838 B/op
+                 ·gc.count:                        36.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 81318.327 ±(99.9%) 5311.782 ns/op
+                 ·gc.alloc.rate:                   7367.137 MB/sec
+                 ·gc.alloc.rate.norm:              98312.021 B/op
+                 ·gc.churn.PS_Eden_Space:          7250.185 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     96751.335 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.622 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 8.301 B/op
+                 ·gc.count:                        33.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 83081.936 ±(99.9%) 5980.953 ns/op
+                 ·gc.alloc.rate:                   7220.308 MB/sec
+                 ·gc.alloc.rate.norm:              98312.022 B/op
+                 ·gc.churn.PS_Eden_Space:          7372.070 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     100378.415 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.669 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 9.103 B/op
+                 ·gc.count:                        34.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+# Run progress: 6.25% complete, ETA 00:05:09
+Forking using command: [/Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java, -Dfile.encoding=UTF-8, -Duser.country=UA, -Duser.language=en, -Duser.variant, -XX:CompileCommandFile=/var/folders/t4/l12fk0ms6x5dq15ywpb3h0400000gn/T/jmh2484061297558712575compilecommand, -cp, /Users/dhorkhover/dev/personal/jmh-benchmarks/build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 49778]
+# Fork: 2 of 4
+# Warmup Iteration   1: 110665.560 ±(99.9%) 6155.992 ns/op
+# Warmup Iteration   2: 83200.085 ±(99.9%) 3969.380 ns/op
+# Warmup Iteration   3: 83978.686 ±(99.9%) 1693.750 ns/op
+# Warmup Iteration   4: 84234.780 ±(99.9%) 8092.048 ns/op
+Iteration   1: 82080.613 ±(99.9%) 3648.071 ns/op
+                 ·gc.alloc.rate:                   7302.752 MB/sec
+                 ·gc.alloc.rate.norm:              98312.021 B/op
+                 ·gc.churn.PS_Eden_Space:          7474.961 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     100630.360 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.472 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 6.353 B/op
+                 ·gc.count:                        34.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 82010.671 ±(99.9%) 1823.080 ns/op
+                 ·gc.alloc.rate:                   7298.392 MB/sec
+                 ·gc.alloc.rate.norm:              98312.021 B/op
+                 ·gc.churn.PS_Eden_Space:          7314.834 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     98533.496 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.722 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 9.723 B/op
+                 ·gc.count:                        34.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 83859.193 ±(99.9%) 4838.626 ns/op
+                 ·gc.alloc.rate:                   7151.228 MB/sec
+                 ·gc.alloc.rate.norm:              98312.022 B/op
+                 ·gc.churn.PS_Eden_Space:          7255.858 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     99750.435 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.633 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 8.697 B/op
+                 ·gc.count:                        35.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 81575.665 ±(99.9%) 5113.384 ns/op
+                 ·gc.alloc.rate:                   7350.095 MB/sec
+                 ·gc.alloc.rate.norm:              98312.021 B/op
+                 ·gc.churn.PS_Eden_Space:          7335.740 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     98120.018 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.484 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 6.476 B/op
+                 ·gc.count:                        30.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+# Run progress: 12.50% complete, ETA 00:04:48
+Forking using command: [/Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java, -Dfile.encoding=UTF-8, -Duser.country=UA, -Duser.language=en, -Duser.variant, -XX:CompileCommandFile=/var/folders/t4/l12fk0ms6x5dq15ywpb3h0400000gn/T/jmh2484061297558712575compilecommand, -cp, /Users/dhorkhover/dev/personal/jmh-benchmarks/build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 49778]
+# Fork: 3 of 4
+# Warmup Iteration   1: 108157.486 ±(99.9%) 6109.974 ns/op
+# Warmup Iteration   2: 81349.237 ±(99.9%) 2385.135 ns/op
+# Warmup Iteration   3: 82783.640 ±(99.9%) 4092.435 ns/op
+# Warmup Iteration   4: 81048.568 ±(99.9%) 4826.975 ns/op
+Iteration   1: 83192.173 ±(99.9%) 2114.714 ns/op
+                 ·gc.alloc.rate:                   7207.557 MB/sec
+                 ·gc.alloc.rate.norm:              98312.021 B/op
+                 ·gc.churn.PS_Eden_Space:          7019.716 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     95749.847 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.611 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 8.339 B/op
+                 ·gc.count:                        33.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 99221.898 ±(99.9%) 6035.265 ns/op
+                 ·gc.alloc.rate:                   5993.061 MB/sec
+                 ·gc.alloc.rate.norm:              98312.026 B/op
+                 ·gc.churn.PS_Eden_Space:          6273.277 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     102908.777 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.550 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 9.030 B/op
+                 ·gc.count:                        29.000 counts
+                 ·gc.time:                         18.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 96217.204 ±(99.9%) 8602.315 ns/op
+                 ·gc.alloc.rate:                   6272.663 MB/sec
+                 ·gc.alloc.rate.norm:              98312.023 B/op
+                 ·gc.churn.PS_Eden_Space:          6231.333 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     97664.263 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.613 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 9.606 B/op
+                 ·gc.count:                        29.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 93129.878 ±(99.9%) 10375.145 ns/op
+                 ·gc.alloc.rate:                   6448.040 MB/sec
+                 ·gc.alloc.rate.norm:              98312.024 B/op
+                 ·gc.churn.PS_Eden_Space:          6495.355 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     99033.422 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.621 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 9.461 B/op
+                 ·gc.count:                        31.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+# Run progress: 18.75% complete, ETA 00:04:27
+Forking using command: [/Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java, -Dfile.encoding=UTF-8, -Duser.country=UA, -Duser.language=en, -Duser.variant, -XX:CompileCommandFile=/var/folders/t4/l12fk0ms6x5dq15ywpb3h0400000gn/T/jmh2484061297558712575compilecommand, -cp, /Users/dhorkhover/dev/personal/jmh-benchmarks/build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 49778]
+# Fork: 4 of 4
+# Warmup Iteration   1: 109826.700 ±(99.9%) 7381.640 ns/op
+# Warmup Iteration   2: 81370.450 ±(99.9%) 5197.336 ns/op
+# Warmup Iteration   3: 83296.398 ±(99.9%) 6896.442 ns/op
+# Warmup Iteration   4: 83634.681 ±(99.9%) 7015.191 ns/op
+Iteration   1: 86197.469 ±(99.9%) 6681.365 ns/op
+                 ·gc.alloc.rate:                   6955.450 MB/sec
+                 ·gc.alloc.rate.norm:              98312.022 B/op
+                 ·gc.churn.PS_Eden_Space:          7375.335 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     104246.902 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.545 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 7.697 B/op
+                 ·gc.count:                        28.000 counts
+                 ·gc.time:                         18.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 82149.406 ±(99.9%) 4751.481 ns/op
+                 ·gc.alloc.rate:                   7305.133 MB/sec
+                 ·gc.alloc.rate.norm:              98312.021 B/op
+                 ·gc.churn.PS_Eden_Space:          7360.140 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     99052.302 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.707 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 9.517 B/op
+                 ·gc.count:                        33.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 83590.340 ±(99.9%) 3219.713 ns/op
+                 ·gc.alloc.rate:                   7178.347 MB/sec
+                 ·gc.alloc.rate.norm:              98312.022 B/op
+                 ·gc.churn.PS_Eden_Space:          7171.041 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     98211.965 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.684 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 9.374 B/op
+                 ·gc.count:                        32.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 81910.295 ±(99.9%) 1866.532 ns/op
+                 ·gc.alloc.rate:                   7324.531 MB/sec
+                 ·gc.alloc.rate.norm:              98312.021 B/op
+                 ·gc.churn.PS_Eden_Space:          7418.073 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     99567.566 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.608 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 8.154 B/op
+                 ·gc.count:                        35.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+
+Result "benchmarks.SplitAndGetBenchmark.split":
+  85167.892 ±(99.9%) 5815.190 ns/op [Average]
+  (min, avg, max) = (81318.327, 85167.892, 99221.898), stdev = 5711.294
+  CI (99.9%): [79352.702, 90983.082] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.split:·gc.alloc.rate":
+  7068.035 ±(99.9%) 440.985 MB/sec [Average]
+  (min, avg, max) = (5993.061, 7068.035, 7374.331), stdev = 433.106
+  CI (99.9%): [6627.050, 7509.020] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.split:·gc.alloc.rate.norm":
+  98312.022 ±(99.9%) 0.001 B/op [Average]
+  (min, avg, max) = (98312.021, 98312.022, 98312.026), stdev = 0.001
+  CI (99.9%): [98312.020, 98312.023] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.split:·gc.churn.PS_Eden_Space":
+  7135.012 ±(99.9%) 423.556 MB/sec [Average]
+  (min, avg, max) = (6231.333, 7135.012, 7474.961), stdev = 415.989
+  CI (99.9%): [6711.456, 7558.567] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.split:·gc.churn.PS_Eden_Space.norm":
+  99283.504 ±(99.9%) 2141.480 B/op [Average]
+  (min, avg, max) = (95749.847, 99283.504, 104246.902), stdev = 2103.220
+  CI (99.9%): [97142.024, 101424.984] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.split:·gc.churn.PS_Survivor_Space":
+  0.611 ±(99.9%) 0.073 MB/sec [Average]
+  (min, avg, max) = (0.472, 0.611, 0.722), stdev = 0.072
+  CI (99.9%): [0.538, 0.684] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.split:·gc.churn.PS_Survivor_Space.norm":
+  8.527 ±(99.9%) 1.057 B/op [Average]
+  (min, avg, max) = (6.353, 8.527, 9.723), stdev = 1.038
+  CI (99.9%): [7.470, 9.584] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.split:·gc.count":
+  522.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (28.000, 32.625, 36.000), stdev = 2.553
+  CI (99.9%): [522.000, 522.000] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.split:·gc.time":
+  311.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (18.000, 19.438, 21.000), stdev = 0.814
+  CI (99.9%): [311.000, 311.000] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.split:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 99.4%         RUNNABLE
+  0.6%         WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 97.1%  97.7% java.lang.String.split
+  1.0%   1.0% java.util.Arrays.copyOfRange
+  0.6%   0.6% java.lang.String.substring
+  0.3%   0.3% java.util.Arrays.copyOf
+  0.1%   0.1% benchmarks.jmh_generated.SplitAndGetBenchmark_split_jmhTest.split_avgt_jmhStub
+  0.1%   0.1% org.openjdk.jmh.infra.Blackhole.consume
+  0.0%   0.0% java.lang.Thread.currentThread
+  0.0%   0.0% sun.misc.Unsafe.compareAndSwapInt
+  0.0%   0.0% java.util.concurrent.atomic.AtomicInteger.getAndDecrement
+  0.0%   0.0% sun.misc.Unsafe.unpark
+
+....[Thread state: WAITING].........................................................................
+  0.6% 100.0% sun.misc.Unsafe.park
+
+
+
+# JMH version: 1.29
+# VM version: JDK 1.8.0_282, OpenJDK 64-Bit Server VM, 25.282-b08
+# VM invoker: /Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=UA -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint
+# Warmup: 4 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarks.SplitAndGetBenchmark.split
+# Parameters: (pos = 985, size = 1000)
+
+# Run progress: 25.00% complete, ETA 00:04:07
+Forking using command: [/Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java, -Dfile.encoding=UTF-8, -Duser.country=UA, -Duser.language=en, -Duser.variant, -XX:CompileCommandFile=/var/folders/t4/l12fk0ms6x5dq15ywpb3h0400000gn/T/jmh2484061297558712575compilecommand, -cp, /Users/dhorkhover/dev/personal/jmh-benchmarks/build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 49796]
+# Fork: 1 of 4
+# Warmup Iteration   1: 104805.275 ±(99.9%) 4506.772 ns/op
+# Warmup Iteration   2: 83502.040 ±(99.9%) 1934.082 ns/op
+# Warmup Iteration   3: 84129.705 ±(99.9%) 3562.337 ns/op
+# Warmup Iteration   4: 81927.550 ±(99.9%) 5844.204 ns/op
+Iteration   1: 81834.427 ±(99.9%) 3097.353 ns/op
+                 ·gc.alloc.rate:                   7318.230 MB/sec
+                 ·gc.alloc.rate.norm:              98312.022 B/op
+                 ·gc.churn.PS_Eden_Space:          7321.495 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     98355.875 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.559 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 7.506 B/op
+                 ·gc.count:                        33.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 82281.647 ±(99.9%) 4383.543 ns/op
+                 ·gc.alloc.rate:                   7289.406 MB/sec
+                 ·gc.alloc.rate.norm:              98312.021 B/op
+                 ·gc.churn.PS_Eden_Space:          7297.275 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     98418.152 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.783 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 10.560 B/op
+                 ·gc.count:                        35.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 81749.770 ±(99.9%) 5448.289 ns/op
+                 ·gc.alloc.rate:                   7334.988 MB/sec
+                 ·gc.alloc.rate.norm:              98312.021 B/op
+                 ·gc.churn.PS_Eden_Space:          7509.862 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     100655.888 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.485 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 6.504 B/op
+                 ·gc.count:                        33.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 83594.276 ±(99.9%) 4817.570 ns/op
+                 ·gc.alloc.rate:                   7180.358 MB/sec
+                 ·gc.alloc.rate.norm:              98312.021 B/op
+                 ·gc.churn.PS_Eden_Space:          7062.079 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     96692.570 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.546 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 7.478 B/op
+                 ·gc.count:                        28.000 counts
+                 ·gc.time:                         18.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+# Run progress: 31.25% complete, ETA 00:03:46
+Forking using command: [/Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java, -Dfile.encoding=UTF-8, -Duser.country=UA, -Duser.language=en, -Duser.variant, -XX:CompileCommandFile=/var/folders/t4/l12fk0ms6x5dq15ywpb3h0400000gn/T/jmh2484061297558712575compilecommand, -cp, /Users/dhorkhover/dev/personal/jmh-benchmarks/build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 49796]
+# Fork: 2 of 4
+# Warmup Iteration   1: 110969.840 ±(99.9%) 9136.082 ns/op
+# Warmup Iteration   2: 81567.856 ±(99.9%) 4311.769 ns/op
+# Warmup Iteration   3: 81851.666 ±(99.9%) 7634.701 ns/op
+# Warmup Iteration   4: 81202.703 ±(99.9%) 3698.960 ns/op
+Iteration   1: 81487.994 ±(99.9%) 6169.972 ns/op
+                 ·gc.alloc.rate:                   7365.792 MB/sec
+                 ·gc.alloc.rate.norm:              98312.021 B/op
+                 ·gc.churn.PS_Eden_Space:          7501.526 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     100123.672 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.608 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 8.115 B/op
+                 ·gc.count:                        34.000 counts
+                 ·gc.time:                         29.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 81751.354 ±(99.9%) 4845.645 ns/op
+                 ·gc.alloc.rate:                   7345.632 MB/sec
+                 ·gc.alloc.rate.norm:              98312.022 B/op
+                 ·gc.churn.PS_Eden_Space:          7229.918 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     96763.340 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.547 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 7.318 B/op
+                 ·gc.count:                        35.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 82770.063 ±(99.9%) 6031.530 ns/op
+                 ·gc.alloc.rate:                   7242.250 MB/sec
+                 ·gc.alloc.rate.norm:              98312.022 B/op
+                 ·gc.churn.PS_Eden_Space:          7433.309 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     100905.610 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.721 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 9.787 B/op
+                 ·gc.count:                        37.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 81313.261 ±(99.9%) 7372.760 ns/op
+                 ·gc.alloc.rate:                   7377.245 MB/sec
+                 ·gc.alloc.rate.norm:              98312.021 B/op
+                 ·gc.churn.PS_Eden_Space:          7327.719 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     97652.023 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.622 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 8.291 B/op
+                 ·gc.count:                        35.000 counts
+                 ·gc.time:                         21.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+# Run progress: 37.50% complete, ETA 00:03:25
+Forking using command: [/Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java, -Dfile.encoding=UTF-8, -Duser.country=UA, -Duser.language=en, -Duser.variant, -XX:CompileCommandFile=/var/folders/t4/l12fk0ms6x5dq15ywpb3h0400000gn/T/jmh2484061297558712575compilecommand, -cp, /Users/dhorkhover/dev/personal/jmh-benchmarks/build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 49796]
+# Fork: 3 of 4
+# Warmup Iteration   1: 109789.156 ±(99.9%) 12047.758 ns/op
+# Warmup Iteration   2: 81732.749 ±(99.9%) 4373.434 ns/op
+# Warmup Iteration   3: 81578.720 ±(99.9%) 5426.521 ns/op
+# Warmup Iteration   4: 81460.461 ±(99.9%) 3096.486 ns/op
+Iteration   1: 81325.383 ±(99.9%) 3542.671 ns/op
+                 ·gc.alloc.rate:                   7381.185 MB/sec
+                 ·gc.alloc.rate.norm:              98312.021 B/op
+                 ·gc.churn.PS_Eden_Space:          7400.700 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     98571.952 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.583 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 7.769 B/op
+                 ·gc.count:                        37.000 counts
+                 ·gc.time:                         21.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 81594.284 ±(99.9%) 2462.110 ns/op
+                 ·gc.alloc.rate:                   7340.034 MB/sec
+                 ·gc.alloc.rate.norm:              98312.021 B/op
+                 ·gc.churn.PS_Eden_Space:          7458.843 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     99903.341 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.759 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 10.160 B/op
+                 ·gc.count:                        35.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 81239.482 ±(99.9%) 5075.902 ns/op
+                 ·gc.alloc.rate:                   7385.098 MB/sec
+                 ·gc.alloc.rate.norm:              98312.023 B/op
+                 ·gc.churn.PS_Eden_Space:          7454.482 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     99235.683 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.671 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 8.931 B/op
+                 ·gc.count:                        35.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 83016.139 ±(99.9%) 5234.716 ns/op
+                 ·gc.alloc.rate:                   7232.108 MB/sec
+                 ·gc.alloc.rate.norm:              98312.022 B/op
+                 ·gc.churn.PS_Eden_Space:          7255.134 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     98625.033 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.535 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 7.273 B/op
+                 ·gc.count:                        34.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+# Run progress: 43.75% complete, ETA 00:03:05
+Forking using command: [/Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java, -Dfile.encoding=UTF-8, -Duser.country=UA, -Duser.language=en, -Duser.variant, -XX:CompileCommandFile=/var/folders/t4/l12fk0ms6x5dq15ywpb3h0400000gn/T/jmh2484061297558712575compilecommand, -cp, /Users/dhorkhover/dev/personal/jmh-benchmarks/build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 49796]
+# Fork: 4 of 4
+# Warmup Iteration   1: 113760.375 ±(99.9%) 5991.494 ns/op
+# Warmup Iteration   2: 84760.435 ±(99.9%) 9195.966 ns/op
+# Warmup Iteration   3: 81195.280 ±(99.9%) 6003.447 ns/op
+# Warmup Iteration   4: 81309.318 ±(99.9%) 4629.155 ns/op
+Iteration   1: 81272.365 ±(99.9%) 3245.863 ns/op
+                 ·gc.alloc.rate:                   7378.590 MB/sec
+                 ·gc.alloc.rate.norm:              98312.021 B/op
+                 ·gc.churn.PS_Eden_Space:          7373.436 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     98243.348 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.608 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 8.098 B/op
+                 ·gc.count:                        38.000 counts
+                 ·gc.time:                         21.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 81121.378 ±(99.9%) 5308.306 ns/op
+                 ·gc.alloc.rate:                   7395.256 MB/sec
+                 ·gc.alloc.rate.norm:              98312.021 B/op
+                 ·gc.churn.PS_Eden_Space:          7519.755 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     99967.093 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.648 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 8.612 B/op
+                 ·gc.count:                        36.000 counts
+                 ·gc.time:                         21.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 80994.263 ±(99.9%) 4073.860 ns/op
+                 ·gc.alloc.rate:                   7411.638 MB/sec
+                 ·gc.alloc.rate.norm:              98312.021 B/op
+                 ·gc.churn.PS_Eden_Space:          7446.905 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     98779.815 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.720 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 9.546 B/op
+                 ·gc.count:                        34.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 83296.069 ±(99.9%) 5448.562 ns/op
+                 ·gc.alloc.rate:                   7210.418 MB/sec
+                 ·gc.alloc.rate.norm:              98312.022 B/op
+                 ·gc.churn.PS_Eden_Space:          7201.581 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     98191.526 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.621 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 8.469 B/op
+                 ·gc.count:                        34.000 counts
+                 ·gc.time:                         30.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+
+Result "benchmarks.SplitAndGetBenchmark.split":
+  81915.135 ±(99.9%) 839.943 ns/op [Average]
+  (min, avg, max) = (80994.263, 81915.135, 83594.276), stdev = 824.936
+  CI (99.9%): [81075.192, 82755.077] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.split:·gc.alloc.rate":
+  7324.264 ±(99.9%) 73.450 MB/sec [Average]
+  (min, avg, max) = (7180.358, 7324.264, 7411.638), stdev = 72.138
+  CI (99.9%): [7250.814, 7397.715] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.split:·gc.alloc.rate.norm":
+  98312.021 ±(99.9%) 0.001 B/op [Average]
+  (min, avg, max) = (98312.021, 98312.021, 98312.023), stdev = 0.001
+  CI (99.9%): [98312.021, 98312.022] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.split:·gc.churn.PS_Eden_Space":
+  7362.126 ±(99.9%) 131.350 MB/sec [Average]
+  (min, avg, max) = (7062.079, 7362.126, 7519.755), stdev = 129.004
+  CI (99.9%): [7230.776, 7493.476] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.split:·gc.churn.PS_Eden_Space.norm":
+  98817.807 ±(99.9%) 1271.925 B/op [Average]
+  (min, avg, max) = (96692.570, 98817.807, 100905.610), stdev = 1249.200
+  CI (99.9%): [97545.883, 100089.732] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.split:·gc.churn.PS_Survivor_Space":
+  0.626 ±(99.9%) 0.087 MB/sec [Average]
+  (min, avg, max) = (0.485, 0.626, 0.783), stdev = 0.086
+  CI (99.9%): [0.539, 0.713] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.split:·gc.churn.PS_Survivor_Space.norm":
+  8.401 ±(99.9%) 1.164 B/op [Average]
+  (min, avg, max) = (6.504, 8.401, 10.560), stdev = 1.143
+  CI (99.9%): [7.237, 9.565] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.split:·gc.count":
+  553.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (28.000, 34.563, 38.000), stdev = 2.250
+  CI (99.9%): [553.000, 553.000] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.split:·gc.time":
+  338.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (18.000, 21.125, 30.000), stdev = 3.384
+  CI (99.9%): [338.000, 338.000] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.split:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 99.3%         RUNNABLE
+  0.7%         WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 96.5%  97.2% java.lang.String.split
+  1.0%   1.0% java.util.Arrays.copyOfRange
+  0.7%   0.7% java.lang.String.substring
+  0.4%   0.4% java.util.Arrays.copyOf
+  0.3%   0.3% java.util.ArrayList.subList
+  0.2%   0.2% benchmarks.jmh_generated.SplitAndGetBenchmark_split_jmhTest.split_avgt_jmhStub
+  0.1%   0.1% org.openjdk.jmh.infra.Blackhole.consume
+  0.0%   0.0% sun.misc.Unsafe.unpark
+  0.0%   0.0% java.lang.Thread.currentThread
+  0.0%   0.0% benchmarks.jmh_generated.SplitAndGetBenchmark_split_jmhTest.split_AverageTime
+
+....[Thread state: WAITING].........................................................................
+  0.7% 100.0% sun.misc.Unsafe.park
+
+
+
+# JMH version: 1.29
+# VM version: JDK 1.8.0_282, OpenJDK 64-Bit Server VM, 25.282-b08
+# VM invoker: /Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=UA -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint
+# Warmup: 4 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarks.SplitAndGetBenchmark.stringTokenizer
+# Parameters: (pos = 15, size = 1000)
+
+# Run progress: 50.00% complete, ETA 00:02:44
+Forking using command: [/Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java, -Dfile.encoding=UTF-8, -Duser.country=UA, -Duser.language=en, -Duser.variant, -XX:CompileCommandFile=/var/folders/t4/l12fk0ms6x5dq15ywpb3h0400000gn/T/jmh2484061297558712575compilecommand, -cp, /Users/dhorkhover/dev/personal/jmh-benchmarks/build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 49804]
+# Fork: 1 of 4
+# Warmup Iteration   1: 1792.091 ±(99.9%) 66.416 ns/op
+# Warmup Iteration   2: 1523.675 ±(99.9%) 124.048 ns/op
+# Warmup Iteration   3: 1515.668 ±(99.9%) 61.480 ns/op
+# Warmup Iteration   4: 1550.342 ±(99.9%) 93.507 ns/op
+Iteration   1: 1643.688 ±(99.9%) 66.392 ns/op
+                 ·gc.alloc.rate:                   4002.321 MB/sec
+                 ·gc.alloc.rate.norm:              1080.000 B/op
+                 ·gc.churn.PS_Eden_Space:          4091.873 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     1104.165 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.298 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.080 B/op
+                 ·gc.count:                        38.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 1509.601 ±(99.9%) 75.117 ns/op
+                 ·gc.alloc.rate:                   4359.023 MB/sec
+                 ·gc.alloc.rate.norm:              1080.000 B/op
+                 ·gc.churn.PS_Eden_Space:          4327.612 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     1072.218 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.261 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.065 B/op
+                 ·gc.count:                        31.000 counts
+                 ·gc.time:                         17.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 1564.985 ±(99.9%) 64.598 ns/op
+                 ·gc.alloc.rate:                   4221.035 MB/sec
+                 ·gc.alloc.rate.norm:              1080.000 B/op
+                 ·gc.churn.PS_Eden_Space:          4293.667 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     1098.584 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.273 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.070 B/op
+                 ·gc.count:                        39.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 1574.867 ±(99.9%) 90.567 ns/op
+                 ·gc.alloc.rate:                   4182.726 MB/sec
+                 ·gc.alloc.rate.norm:              1080.000 B/op
+                 ·gc.churn.PS_Eden_Space:          4149.192 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     1071.342 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.187 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.048 B/op
+                 ·gc.count:                        36.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+# Run progress: 56.25% complete, ETA 00:02:23
+Forking using command: [/Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java, -Dfile.encoding=UTF-8, -Duser.country=UA, -Duser.language=en, -Duser.variant, -XX:CompileCommandFile=/var/folders/t4/l12fk0ms6x5dq15ywpb3h0400000gn/T/jmh2484061297558712575compilecommand, -cp, /Users/dhorkhover/dev/personal/jmh-benchmarks/build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 49804]
+# Fork: 2 of 4
+# Warmup Iteration   1: 1748.953 ±(99.9%) 81.678 ns/op
+# Warmup Iteration   2: 1477.135 ±(99.9%) 82.361 ns/op
+# Warmup Iteration   3: 1506.645 ±(99.9%) 101.965 ns/op
+# Warmup Iteration   4: 1468.925 ±(99.9%) 106.189 ns/op
+Iteration   1: 1496.179 ±(99.9%) 59.739 ns/op
+                 ·gc.alloc.rate:                   4398.557 MB/sec
+                 ·gc.alloc.rate.norm:              1080.000 B/op
+                 ·gc.churn.PS_Eden_Space:          4445.313 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     1091.480 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.199 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.049 B/op
+                 ·gc.count:                        35.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 1488.416 ±(99.9%) 55.946 ns/op
+                 ·gc.alloc.rate:                   4423.698 MB/sec
+                 ·gc.alloc.rate.norm:              1080.000 B/op
+                 ·gc.churn.PS_Eden_Space:          4489.634 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     1096.098 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.224 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.055 B/op
+                 ·gc.count:                        39.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 1490.874 ±(99.9%) 40.506 ns/op
+                 ·gc.alloc.rate:                   4409.849 MB/sec
+                 ·gc.alloc.rate.norm:              1080.000 B/op
+                 ·gc.churn.PS_Eden_Space:          4427.559 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     1084.338 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.224 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.055 B/op
+                 ·gc.count:                        36.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 1502.635 ±(99.9%) 117.558 ns/op
+                 ·gc.alloc.rate:                   4393.103 MB/sec
+                 ·gc.alloc.rate.norm:              1080.000 B/op
+                 ·gc.churn.PS_Eden_Space:          4356.728 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     1071.058 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.198 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.049 B/op
+                 ·gc.count:                        36.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+# Run progress: 62.50% complete, ETA 00:02:03
+Forking using command: [/Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java, -Dfile.encoding=UTF-8, -Duser.country=UA, -Duser.language=en, -Duser.variant, -XX:CompileCommandFile=/var/folders/t4/l12fk0ms6x5dq15ywpb3h0400000gn/T/jmh2484061297558712575compilecommand, -cp, /Users/dhorkhover/dev/personal/jmh-benchmarks/build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 49804]
+# Fork: 3 of 4
+# Warmup Iteration   1: 1782.333 ±(99.9%) 66.498 ns/op
+# Warmup Iteration   2: 1530.798 ±(99.9%) 87.363 ns/op
+# Warmup Iteration   3: 1469.743 ±(99.9%) 83.736 ns/op
+# Warmup Iteration   4: 1510.686 ±(99.9%) 91.766 ns/op
+Iteration   1: 1481.929 ±(99.9%) 78.296 ns/op
+                 ·gc.alloc.rate:                   4440.721 MB/sec
+                 ·gc.alloc.rate.norm:              1080.000 B/op
+                 ·gc.churn.PS_Eden_Space:          4404.130 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     1071.101 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.235 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.057 B/op
+                 ·gc.count:                        38.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 1515.502 ±(99.9%) 45.560 ns/op
+                 ·gc.alloc.rate:                   4343.673 MB/sec
+                 ·gc.alloc.rate.norm:              1080.000 B/op
+                 ·gc.churn.PS_Eden_Space:          4372.812 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     1087.245 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.235 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.058 B/op
+                 ·gc.count:                        35.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 1516.123 ±(99.9%) 60.944 ns/op
+                 ·gc.alloc.rate:                   4345.403 MB/sec
+                 ·gc.alloc.rate.norm:              1080.000 B/op
+                 ·gc.churn.PS_Eden_Space:          4299.733 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     1068.650 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.262 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.065 B/op
+                 ·gc.count:                        35.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 1522.135 ±(99.9%) 29.194 ns/op
+                 ·gc.alloc.rate:                   4319.059 MB/sec
+                 ·gc.alloc.rate.norm:              1080.000 B/op
+                 ·gc.churn.PS_Eden_Space:          4459.385 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     1115.090 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.124 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.031 B/op
+                 ·gc.count:                        33.000 counts
+                 ·gc.time:                         17.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+# Run progress: 68.75% complete, ETA 00:01:42
+Forking using command: [/Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java, -Dfile.encoding=UTF-8, -Duser.country=UA, -Duser.language=en, -Duser.variant, -XX:CompileCommandFile=/var/folders/t4/l12fk0ms6x5dq15ywpb3h0400000gn/T/jmh2484061297558712575compilecommand, -cp, /Users/dhorkhover/dev/personal/jmh-benchmarks/build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 49804]
+# Fork: 4 of 4
+# Warmup Iteration   1: 1766.938 ±(99.9%) 117.286 ns/op
+# Warmup Iteration   2: 1485.317 ±(99.9%) 42.409 ns/op
+# Warmup Iteration   3: 1499.081 ±(99.9%) 27.414 ns/op
+# Warmup Iteration   4: 1471.257 ±(99.9%) 89.535 ns/op
+Iteration   1: 1565.067 ±(99.9%) 124.896 ns/op
+                 ·gc.alloc.rate:                   4216.139 MB/sec
+                 ·gc.alloc.rate.norm:              1080.000 B/op
+                 ·gc.churn.PS_Eden_Space:          4238.280 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     1085.672 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.285 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.073 B/op
+                 ·gc.count:                        37.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 1548.942 ±(99.9%) 41.283 ns/op
+                 ·gc.alloc.rate:                   4246.186 MB/sec
+                 ·gc.alloc.rate.norm:              1080.000 B/op
+                 ·gc.churn.PS_Eden_Space:          4190.598 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     1065.862 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.222 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.057 B/op
+                 ·gc.count:                        26.000 counts
+                 ·gc.time:                         15.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 1555.392 ±(99.9%) 75.023 ns/op
+                 ·gc.alloc.rate:                   4228.684 MB/sec
+                 ·gc.alloc.rate.norm:              1080.000 B/op
+                 ·gc.churn.PS_Eden_Space:          4342.318 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     1109.022 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.248 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.063 B/op
+                 ·gc.count:                        38.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 1473.257 ±(99.9%) 99.534 ns/op
+                 ·gc.alloc.rate:                   4473.087 MB/sec
+                 ·gc.alloc.rate.norm:              1080.000 B/op
+                 ·gc.churn.PS_Eden_Space:          4410.272 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     1064.834 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.224 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 0.054 B/op
+                 ·gc.count:                        38.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+
+Result "benchmarks.SplitAndGetBenchmark.stringTokenizer":
+  1528.099 ±(99.9%) 45.460 ns/op [Average]
+  (min, avg, max) = (1473.257, 1528.099, 1643.688), stdev = 44.648
+  CI (99.9%): [1482.639, 1573.559] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.stringTokenizer:·gc.alloc.rate":
+  4312.704 ±(99.9%) 124.525 MB/sec [Average]
+  (min, avg, max) = (4002.321, 4312.704, 4473.087), stdev = 122.300
+  CI (99.9%): [4188.179, 4437.229] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.stringTokenizer:·gc.alloc.rate.norm":
+  1080.000 ±(99.9%) 0.001 B/op [Average]
+  (min, avg, max) = (1080.000, 1080.000, 1080.000), stdev = 0.001
+  CI (99.9%): [1080.000, 1080.000] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.stringTokenizer:·gc.churn.PS_Eden_Space":
+  4331.194 ±(99.9%) 117.317 MB/sec [Average]
+  (min, avg, max) = (4091.873, 4331.194, 4489.634), stdev = 115.221
+  CI (99.9%): [4213.878, 4448.511] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.stringTokenizer:·gc.churn.PS_Eden_Space.norm":
+  1084.797 ±(99.9%) 16.591 B/op [Average]
+  (min, avg, max) = (1064.834, 1084.797, 1115.090), stdev = 16.294
+  CI (99.9%): [1068.207, 1101.388] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.stringTokenizer:·gc.churn.PS_Survivor_Space":
+  0.231 ±(99.9%) 0.043 MB/sec [Average]
+  (min, avg, max) = (0.124, 0.231, 0.298), stdev = 0.043
+  CI (99.9%): [0.188, 0.275] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.stringTokenizer:·gc.churn.PS_Survivor_Space.norm":
+  0.058 ±(99.9%) 0.012 B/op [Average]
+  (min, avg, max) = (0.031, 0.058, 0.080), stdev = 0.012
+  CI (99.9%): [0.046, 0.070] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.stringTokenizer:·gc.count":
+  570.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (26.000, 35.625, 39.000), stdev = 3.364
+  CI (99.9%): [570.000, 570.000] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.stringTokenizer:·gc.time":
+  301.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (15.000, 18.813, 20.000), stdev = 1.377
+  CI (99.9%): [301.000, 301.000] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.stringTokenizer:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 99.3%         RUNNABLE
+  0.7%         WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 96.4%  97.1% benchmarks.SplitAndGetBenchmark.stringTokenizer
+  1.0%   1.0% benchmarks.jmh_generated.SplitAndGetBenchmark_stringTokenizer_jmhTest.stringTokenizer_avgt_jmhStub
+  0.7%   0.7% java.lang.String.substring
+  0.6%   0.6% java.util.Arrays.copyOfRange
+  0.4%   0.4% org.openjdk.jmh.infra.Blackhole.consume
+  0.1%   0.1% benchmarks.jmh_generated.SplitAndGetBenchmark_stringTokenizer_jmhTest.stringTokenizer_AverageTime
+  0.0%   0.0% java.lang.Thread.currentThread
+  0.0%   0.0% sun.misc.Unsafe.compareAndSwapObject
+  0.0%   0.0% java.util.concurrent.CountDownLatch.await
+  0.0%   0.0% java.lang.Thread.isInterrupted
+  0.1%   0.1% <other>
+
+....[Thread state: WAITING].........................................................................
+  0.7% 100.0% sun.misc.Unsafe.park
+
+
+
+# JMH version: 1.29
+# VM version: JDK 1.8.0_282, OpenJDK 64-Bit Server VM, 25.282-b08
+# VM invoker: /Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=UA -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint
+# Warmup: 4 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmarks.SplitAndGetBenchmark.stringTokenizer
+# Parameters: (pos = 985, size = 1000)
+
+# Run progress: 75.00% complete, ETA 00:01:22
+Forking using command: [/Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java, -Dfile.encoding=UTF-8, -Duser.country=UA, -Duser.language=en, -Duser.variant, -XX:CompileCommandFile=/var/folders/t4/l12fk0ms6x5dq15ywpb3h0400000gn/T/jmh2484061297558712575compilecommand, -cp, /Users/dhorkhover/dev/personal/jmh-benchmarks/build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 49813]
+# Fork: 1 of 4
+# Warmup Iteration   1: 107211.398 ±(99.9%) 5384.347 ns/op
+# Warmup Iteration   2: 88326.098 ±(99.9%) 5336.128 ns/op
+# Warmup Iteration   3: 90662.244 ±(99.9%) 6861.605 ns/op
+# Warmup Iteration   4: 88434.188 ±(99.9%) 4281.900 ns/op
+Iteration   1: 91003.262 ±(99.9%) 2756.497 ns/op
+                 ·gc.alloc.rate:                   5230.828 MB/sec
+                 ·gc.alloc.rate.norm:              78000.023 B/op
+                 ·gc.churn.PS_Eden_Space:          5365.227 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     80004.121 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.211 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 3.150 B/op
+                 ·gc.count:                        40.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 87434.341 ±(99.9%) 3451.821 ns/op
+                 ·gc.alloc.rate:                   5437.096 MB/sec
+                 ·gc.alloc.rate.norm:              78000.022 B/op
+                 ·gc.churn.PS_Eden_Space:          5460.814 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     78340.276 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.348 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 4.999 B/op
+                 ·gc.count:                        40.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 91412.844 ±(99.9%) 5844.441 ns/op
+                 ·gc.alloc.rate:                   5201.301 MB/sec
+                 ·gc.alloc.rate.norm:              78000.023 B/op
+                 ·gc.churn.PS_Eden_Space:          5229.285 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     78419.679 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.235 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 3.530 B/op
+                 ·gc.count:                        37.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 87325.425 ±(99.9%) 2104.257 ns/op
+                 ·gc.alloc.rate:                   5439.859 MB/sec
+                 ·gc.alloc.rate.norm:              78000.022 B/op
+                 ·gc.churn.PS_Eden_Space:          5413.104 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     77616.390 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.286 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 4.102 B/op
+                 ·gc.count:                        36.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+# Run progress: 81.25% complete, ETA 00:01:01
+Forking using command: [/Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java, -Dfile.encoding=UTF-8, -Duser.country=UA, -Duser.language=en, -Duser.variant, -XX:CompileCommandFile=/var/folders/t4/l12fk0ms6x5dq15ywpb3h0400000gn/T/jmh2484061297558712575compilecommand, -cp, /Users/dhorkhover/dev/personal/jmh-benchmarks/build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 49813]
+# Fork: 2 of 4
+# Warmup Iteration   1: 120435.767 ±(99.9%) 7408.423 ns/op
+# Warmup Iteration   2: 104900.050 ±(99.9%) 9481.498 ns/op
+# Warmup Iteration   3: 106441.580 ±(99.9%) 12493.932 ns/op
+# Warmup Iteration   4: 111615.579 ±(99.9%) 7787.182 ns/op
+Iteration   1: 97664.372 ±(99.9%) 2993.128 ns/op
+                 ·gc.alloc.rate:                   4868.287 MB/sec
+                 ·gc.alloc.rate.norm:              78000.025 B/op
+                 ·gc.churn.PS_Eden_Space:          4936.115 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     79086.774 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.273 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 4.371 B/op
+                 ·gc.count:                        36.000 counts
+                 ·gc.time:                         18.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 98783.196 ±(99.9%) 5495.137 ns/op
+                 ·gc.alloc.rate:                   4751.502 MB/sec
+                 ·gc.alloc.rate.norm:              78000.025 B/op
+                 ·gc.churn.PS_Eden_Space:          4782.750 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     78512.988 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.184 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 3.014 B/op
+                 ·gc.count:                        24.000 counts
+                 ·gc.time:                         23.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 83071.646 ±(99.9%) 5446.952 ns/op
+                 ·gc.alloc.rate:                   5718.966 MB/sec
+                 ·gc.alloc.rate.norm:              78000.021 B/op
+                 ·gc.churn.PS_Eden_Space:          5726.635 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     78104.622 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.211 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 2.884 B/op
+                 ·gc.count:                        32.000 counts
+                 ·gc.time:                         16.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 82947.130 ±(99.9%) 7039.200 ns/op
+                 ·gc.alloc.rate:                   5737.255 MB/sec
+                 ·gc.alloc.rate.norm:              78000.021 B/op
+                 ·gc.churn.PS_Eden_Space:          5789.087 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     78704.705 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.149 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 2.032 B/op
+                 ·gc.count:                        36.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+# Run progress: 87.50% complete, ETA 00:00:41
+Forking using command: [/Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java, -Dfile.encoding=UTF-8, -Duser.country=UA, -Duser.language=en, -Duser.variant, -XX:CompileCommandFile=/var/folders/t4/l12fk0ms6x5dq15ywpb3h0400000gn/T/jmh2484061297558712575compilecommand, -cp, /Users/dhorkhover/dev/personal/jmh-benchmarks/build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 49813]
+# Fork: 3 of 4
+# Warmup Iteration   1: 109441.951 ±(99.9%) 4489.058 ns/op
+# Warmup Iteration   2: 85314.810 ±(99.9%) 5206.512 ns/op
+# Warmup Iteration   3: 87441.550 ±(99.9%) 6812.401 ns/op
+# Warmup Iteration   4: 83292.556 ±(99.9%) 6413.559 ns/op
+Iteration   1: 83419.402 ±(99.9%) 5908.318 ns/op
+                 ·gc.alloc.rate:                   5701.583 MB/sec
+                 ·gc.alloc.rate.norm:              78000.022 B/op
+                 ·gc.churn.PS_Eden_Space:          5742.110 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     78554.450 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.274 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 3.743 B/op
+                 ·gc.count:                        41.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 88210.195 ±(99.9%) 4432.792 ns/op
+                 ·gc.alloc.rate:                   5387.561 MB/sec
+                 ·gc.alloc.rate.norm:              78000.023 B/op
+                 ·gc.churn.PS_Eden_Space:          5420.557 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     78477.730 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.248 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 3.591 B/op
+                 ·gc.count:                        32.000 counts
+                 ·gc.time:                         17.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 83115.939 ±(99.9%) 4580.303 ns/op
+                 ·gc.alloc.rate:                   5720.318 MB/sec
+                 ·gc.alloc.rate.norm:              78000.021 B/op
+                 ·gc.churn.PS_Eden_Space:          5812.238 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     79253.404 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.211 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 2.878 B/op
+                 ·gc.count:                        35.000 counts
+                 ·gc.time:                         18.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 83051.036 ±(99.9%) 3649.436 ns/op
+                 ·gc.alloc.rate:                   5721.338 MB/sec
+                 ·gc.alloc.rate.norm:              78000.022 B/op
+                 ·gc.churn.PS_Eden_Space:          5749.394 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     78382.522 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.249 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 3.394 B/op
+                 ·gc.count:                        39.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+# Run progress: 93.75% complete, ETA 00:00:20
+Forking using command: [/Users/dhorkhover/Library/Java/JavaVirtualMachines/liberica-1.8.0_282/jre/bin/java, -Dfile.encoding=UTF-8, -Duser.country=UA, -Duser.language=en, -Duser.variant, -XX:CompileCommandFile=/var/folders/t4/l12fk0ms6x5dq15ywpb3h0400000gn/T/jmh2484061297558712575compilecommand, -cp, /Users/dhorkhover/dev/personal/jmh-benchmarks/build/libs/benchmarks.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 49813]
+# Fork: 4 of 4
+# Warmup Iteration   1: 103156.325 ±(99.9%) 3682.121 ns/op
+# Warmup Iteration   2: 86130.646 ±(99.9%) 4956.141 ns/op
+# Warmup Iteration   3: 84130.135 ±(99.9%) 4750.139 ns/op
+# Warmup Iteration   4: 85853.950 ±(99.9%) 4069.036 ns/op
+Iteration   1: 83243.209 ±(99.9%) 4961.239 ns/op
+                 ·gc.alloc.rate:                   5709.097 MB/sec
+                 ·gc.alloc.rate.norm:              78000.021 B/op
+                 ·gc.churn.PS_Eden_Space:          5706.659 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     77966.705 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.224 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 3.055 B/op
+                 ·gc.count:                        34.000 counts
+                 ·gc.time:                         18.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 85053.043 ±(99.9%) 7393.041 ns/op
+                 ·gc.alloc.rate:                   5596.260 MB/sec
+                 ·gc.alloc.rate.norm:              78000.022 B/op
+                 ·gc.churn.PS_Eden_Space:          5629.031 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     78456.779 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.347 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 4.830 B/op
+                 ·gc.count:                        41.000 counts
+                 ·gc.time:                         21.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 85875.978 ±(99.9%) 5029.081 ns/op
+                 ·gc.alloc.rate:                   5541.133 MB/sec
+                 ·gc.alloc.rate.norm:              78000.022 B/op
+                 ·gc.churn.PS_Eden_Space:          5645.136 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     79464.024 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.272 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 3.822 B/op
+                 ·gc.count:                        38.000 counts
+                 ·gc.time:                         20.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 83436.823 ±(99.9%) 6664.602 ns/op
+                 ·gc.alloc.rate:                   5705.336 MB/sec
+                 ·gc.alloc.rate.norm:              78000.021 B/op
+                 ·gc.churn.PS_Eden_Space:          5715.110 MB/sec
+                 ·gc.churn.PS_Eden_Space.norm:     78133.645 B/op
+                 ·gc.churn.PS_Survivor_Space:      0.247 MB/sec
+                 ·gc.churn.PS_Survivor_Space.norm: 3.379 B/op
+                 ·gc.count:                        39.000 counts
+                 ·gc.time:                         19.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+
+Result "benchmarks.SplitAndGetBenchmark.stringTokenizer":
+  87190.490 ±(99.9%) 5234.684 ns/op [Average]
+  (min, avg, max) = (82947.130, 87190.490, 98783.196), stdev = 5141.159
+  CI (99.9%): [81955.806, 92425.174] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.stringTokenizer:·gc.alloc.rate":
+  5466.733 ±(99.9%) 317.956 MB/sec [Average]
+  (min, avg, max) = (4751.502, 5466.733, 5737.255), stdev = 312.275
+  CI (99.9%): [5148.776, 5784.689] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.stringTokenizer:·gc.alloc.rate.norm":
+  78000.022 ±(99.9%) 0.001 B/op [Average]
+  (min, avg, max) = (78000.021, 78000.022, 78000.025), stdev = 0.001
+  CI (99.9%): [78000.021, 78000.024] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.stringTokenizer:·gc.churn.PS_Eden_Space":
+  5507.703 ±(99.9%) 313.083 MB/sec [Average]
+  (min, avg, max) = (4782.750, 5507.703, 5812.238), stdev = 307.490
+  CI (99.9%): [5194.620, 5820.787] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.stringTokenizer:·gc.churn.PS_Eden_Space.norm":
+  78592.426 ±(99.9%) 611.810 B/op [Average]
+  (min, avg, max) = (77616.390, 78592.426, 80004.121), stdev = 600.879
+  CI (99.9%): [77980.616, 79204.236] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.stringTokenizer:·gc.churn.PS_Survivor_Space":
+  0.248 ±(99.9%) 0.054 MB/sec [Average]
+  (min, avg, max) = (0.149, 0.248, 0.348), stdev = 0.053
+  CI (99.9%): [0.194, 0.302] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.stringTokenizer:·gc.churn.PS_Survivor_Space.norm":
+  3.548 ±(99.9%) 0.779 B/op [Average]
+  (min, avg, max) = (2.032, 3.548, 4.999), stdev = 0.765
+  CI (99.9%): [2.770, 4.327] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.stringTokenizer:·gc.count":
+  580.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (24.000, 36.250, 41.000), stdev = 4.359
+  CI (99.9%): [580.000, 580.000] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.stringTokenizer:·gc.time":
+  306.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (16.000, 19.125, 23.000), stdev = 1.628
+  CI (99.9%): [306.000, 306.000] (assumes normal distribution)
+
+Secondary result "benchmarks.SplitAndGetBenchmark.stringTokenizer:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 99.4%         RUNNABLE
+  0.6%         WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 97.5%  98.1% benchmarks.SplitAndGetBenchmark.stringTokenizer
+  0.9%   0.9% java.util.Arrays.copyOfRange
+  0.7%   0.7% java.lang.String.substring
+  0.1%   0.1% org.openjdk.jmh.infra.Blackhole.consume
+  0.1%   0.1% java.lang.Thread.currentThread
+  0.1%   0.1% benchmarks.jmh_generated.SplitAndGetBenchmark_stringTokenizer_jmhTest.stringTokenizer_avgt_jmhStub
+  0.0%   0.0% sun.misc.Unsafe.unpark
+  0.0%   0.0% sun.misc.Unsafe.getIntVolatile
+  0.0%   0.0% benchmarks.jmh_generated.SplitAndGetBenchmark_stringTokenizer_jmhTest.stringTokenizer_AverageTime
+  0.0%   0.0% java.lang.Thread.isInterrupted
+
+....[Thread state: WAITING].........................................................................
+  0.6% 100.0% sun.misc.Unsafe.park
+
+
+
+# Run complete. Total time: 00:05:28
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                              (pos)  (size)  Mode  Cnt      Score      Error   Units
+SplitAndGetBenchmark.split                                                15    1000  avgt   16  85167.892 ± 5815.190   ns/op
+SplitAndGetBenchmark.split:·gc.alloc.rate                                 15    1000  avgt   16   7068.035 ±  440.985  MB/sec
+SplitAndGetBenchmark.split:·gc.alloc.rate.norm                            15    1000  avgt   16  98312.022 ±    0.001    B/op
+SplitAndGetBenchmark.split:·gc.churn.PS_Eden_Space                        15    1000  avgt   16   7135.012 ±  423.556  MB/sec
+SplitAndGetBenchmark.split:·gc.churn.PS_Eden_Space.norm                   15    1000  avgt   16  99283.504 ± 2141.480    B/op
+SplitAndGetBenchmark.split:·gc.churn.PS_Survivor_Space                    15    1000  avgt   16      0.611 ±    0.073  MB/sec
+SplitAndGetBenchmark.split:·gc.churn.PS_Survivor_Space.norm               15    1000  avgt   16      8.527 ±    1.057    B/op
+SplitAndGetBenchmark.split:·gc.count                                      15    1000  avgt   16    522.000             counts
+SplitAndGetBenchmark.split:·gc.time                                       15    1000  avgt   16    311.000                 ms
+SplitAndGetBenchmark.split:·stack                                         15    1000  avgt             NaN                ---
+SplitAndGetBenchmark.split                                               985    1000  avgt   16  81915.135 ±  839.943   ns/op
+SplitAndGetBenchmark.split:·gc.alloc.rate                                985    1000  avgt   16   7324.264 ±   73.450  MB/sec
+SplitAndGetBenchmark.split:·gc.alloc.rate.norm                           985    1000  avgt   16  98312.021 ±    0.001    B/op
+SplitAndGetBenchmark.split:·gc.churn.PS_Eden_Space                       985    1000  avgt   16   7362.126 ±  131.350  MB/sec
+SplitAndGetBenchmark.split:·gc.churn.PS_Eden_Space.norm                  985    1000  avgt   16  98817.807 ± 1271.925    B/op
+SplitAndGetBenchmark.split:·gc.churn.PS_Survivor_Space                   985    1000  avgt   16      0.626 ±    0.087  MB/sec
+SplitAndGetBenchmark.split:·gc.churn.PS_Survivor_Space.norm              985    1000  avgt   16      8.401 ±    1.164    B/op
+SplitAndGetBenchmark.split:·gc.count                                     985    1000  avgt   16    553.000             counts
+SplitAndGetBenchmark.split:·gc.time                                      985    1000  avgt   16    338.000                 ms
+SplitAndGetBenchmark.split:·stack                                        985    1000  avgt             NaN                ---
+SplitAndGetBenchmark.stringTokenizer                                      15    1000  avgt   16   1528.099 ±   45.460   ns/op
+SplitAndGetBenchmark.stringTokenizer:·gc.alloc.rate                       15    1000  avgt   16   4312.704 ±  124.525  MB/sec
+SplitAndGetBenchmark.stringTokenizer:·gc.alloc.rate.norm                  15    1000  avgt   16   1080.000 ±    0.001    B/op
+SplitAndGetBenchmark.stringTokenizer:·gc.churn.PS_Eden_Space              15    1000  avgt   16   4331.194 ±  117.317  MB/sec
+SplitAndGetBenchmark.stringTokenizer:·gc.churn.PS_Eden_Space.norm         15    1000  avgt   16   1084.797 ±   16.591    B/op
+SplitAndGetBenchmark.stringTokenizer:·gc.churn.PS_Survivor_Space          15    1000  avgt   16      0.231 ±    0.043  MB/sec
+SplitAndGetBenchmark.stringTokenizer:·gc.churn.PS_Survivor_Space.norm     15    1000  avgt   16      0.058 ±    0.012    B/op
+SplitAndGetBenchmark.stringTokenizer:·gc.count                            15    1000  avgt   16    570.000             counts
+SplitAndGetBenchmark.stringTokenizer:·gc.time                             15    1000  avgt   16    301.000                 ms
+SplitAndGetBenchmark.stringTokenizer:·stack                               15    1000  avgt             NaN                ---
+SplitAndGetBenchmark.stringTokenizer                                     985    1000  avgt   16  87190.490 ± 5234.684   ns/op
+SplitAndGetBenchmark.stringTokenizer:·gc.alloc.rate                      985    1000  avgt   16   5466.733 ±  317.956  MB/sec
+SplitAndGetBenchmark.stringTokenizer:·gc.alloc.rate.norm                 985    1000  avgt   16  78000.022 ±    0.001    B/op
+SplitAndGetBenchmark.stringTokenizer:·gc.churn.PS_Eden_Space             985    1000  avgt   16   5507.703 ±  313.083  MB/sec
+SplitAndGetBenchmark.stringTokenizer:·gc.churn.PS_Eden_Space.norm        985    1000  avgt   16  78592.426 ±  611.810    B/op
+SplitAndGetBenchmark.stringTokenizer:·gc.churn.PS_Survivor_Space         985    1000  avgt   16      0.248 ±    0.054  MB/sec
+SplitAndGetBenchmark.stringTokenizer:·gc.churn.PS_Survivor_Space.norm    985    1000  avgt   16      3.548 ±    0.779    B/op
+SplitAndGetBenchmark.stringTokenizer:·gc.count                           985    1000  avgt   16    580.000             counts
+SplitAndGetBenchmark.stringTokenizer:·gc.time                            985    1000  avgt   16    306.000                 ms
+SplitAndGetBenchmark.stringTokenizer:·stack                              985    1000  avgt             NaN                ---
